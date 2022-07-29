@@ -55,11 +55,11 @@ void LED_ON(LedIndex Led)
 {
   switch (Led)
   {
-  case RED_LED   : Dio_WriteChannel(DioConf_LED1_CHANNEL_ID_INDEX, LOGIC_HIGH);
+  case RED_LED   : Dio_WriteChannel(DioConf_LED1_CHANNEL_ID_INDEX, STD_HIGH);
   break;
-  case BLUE_LED  : Dio_WriteChannel(DioConf_LED1_CHANNEL_ID_INDEX, LOGIC_HIGH);
+  case BLUE_LED  : Dio_WriteChannel(DioConf_LED1_CHANNEL_ID_INDEX, STD_HIGH);
   break;
-  case GREEN_LED : Dio_WriteChannel(DioConf_LED1_CHANNEL_ID_INDEX, LOGIC_HIGH);
+  case GREEN_LED : Dio_WriteChannel(DioConf_LED1_CHANNEL_ID_INDEX, STD_HIGH);
   break;
   }
 }
@@ -79,11 +79,11 @@ void LED_OFF(LedIndex Led)
 {
   switch (Led)
   {
-  case RED_LED   : Dio_WriteChannel(DioConf_LED1_CHANNEL_ID_INDEX, LOGIC_LOW);
+  case RED_LED   : Dio_WriteChannel(DioConf_LED1_CHANNEL_ID_INDEX, STD_LOW);
   break;
-  case BLUE_LED  : Dio_WriteChannel(DioConf_LED1_CHANNEL_ID_INDEX, LOGIC_LOW);
+  case BLUE_LED  : Dio_WriteChannel(DioConf_LED1_CHANNEL_ID_INDEX, STD_LOW);
   break;
-  case GREEN_LED : Dio_WriteChannel(DioConf_LED1_CHANNEL_ID_INDEX, LOGIC_LOW);
+  case GREEN_LED : Dio_WriteChannel(DioConf_LED1_CHANNEL_ID_INDEX, STD_LOW);
   break;
   }
 }

@@ -14,6 +14,7 @@
  *********************************************************************************************************************/
 #include "Gptm.h"
 #include "App.h"
+#include "Isr.h"
 
 /**********************************************************************************************************************
 *  LOCAL MACROS CONSTANT\FUNCTION
@@ -53,7 +54,7 @@ extern void Timer5B_WIDE_ISR(void);
 
 const Gpt_ConfigType Gpt_ConfigPtr = {
 			 TIMER0_A       ,GPT_MODE_NORMAL,INITIALIZED,TickFrequency,TickValueMax,INTERRUPT_ON ,GPT_CONTINUOUS,Timer0A_ISR     ,
-			 TIMER0_B       ,GPT_MODE_NORMAL,INITIALIZED,TickFrequency,TickValueMax,INTERRUPT_OFF,GPT_CONTINUOUS,TIMER0B_ISR     ,
+		   TIMER0_B       ,GPT_MODE_NORMAL,INITIALIZED,TickFrequency,TickValueMax,INTERRUPT_OFF,GPT_CONTINUOUS,TIMER0B_ISR     ,
 			 TIMER1_A       ,GPT_MODE_NORMAL,INITIALIZED,TickFrequency,TickValueMax,INTERRUPT_OFF,GPT_CONTINUOUS,TIMER1A_ISR     ,
 			 TIMER1_B       ,GPT_MODE_NORMAL,INITIALIZED,TickFrequency,TickValueMax,INTERRUPT_OFF,GPT_CONTINUOUS,Timer1B_ISR     ,
 			 TIMER2_A       ,GPT_MODE_NORMAL,INITIALIZED,TickFrequency,TickValueMax,INTERRUPT_OFF,GPT_CONTINUOUS,Timer2A_ISR     ,

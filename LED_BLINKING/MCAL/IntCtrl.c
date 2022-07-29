@@ -52,13 +52,11 @@ STATIC uint8 IntCtrl_Status = INTCTRL_NOT_INITIALIZED ;
 * \Parameters (out): None                                                      
 * \Return value:   : None                                  
 *******************************************************************************/
- void IntCtrl_init(void)
+ void IntCtrl_init(const IntCtrl_ConfigType* ConfigPtr)
 {
-	 const IntCtrl_ConfigType * ConfigPtr = &IntCtrl_ConfigPtr;
 	 IntCtrl_Status        = INTCTRL_INITIALIZED;
-     IntCtrl_Configuration = ConfigPtr->Interrupt;
-	 volatile uint32 * IntCtrl_Interrupt_Ptr = NULL_PTR;
-	 IntCtrl_Interrupt_Ptr = (volatile uint32 *)INTCTRL_BASE_ADDRESS;
+         IntCtrl_Configuration = ConfigPtr->Interrupt;
+	 volatile uint32 * IntCtrl_Interrupt_Ptr = (volatile uint32 *)INTCTRL_BASE_ADDRESS;
 	 
 	 for(uint8 i = 0; i < INTCTRL_CONFIGURED_INTERRUPT ; i++)
 	 {
@@ -69,23 +67,23 @@ STATIC uint8 IntCtrl_Status = INTCTRL_NOT_INITIALIZED ;
 		 
 		if ((IntCtrl_Configuration[i].IntCtrl_Exeption_And_Interrupt_Number >= (16)) && (IntCtrl_Configuration[i].IntCtrl_Exeption_And_Interrupt_Number <= (47)))
 		{
-		  SET_BIT(*(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_EN0_BASE_OFFSET) , (((IntCtrl_Configuration[i].IntCtrl_Exeption_And_Interrupt_Number)-(16))%(32)));
+		  SET_BIT(*(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_EN0_BASE_OFFSET) , (((IntCtrl_Configuration[i].IntCtrl_Exeption_And_Interrupt_Number)+(16))%(32)));
 		}
-		else if ((IntCtrl_Configuration[i].IntCtrl_Exeption_And_Interrupt_Number >= (48)) && (IntCtrl_Configuration[i].IntCtrl_Exeption_And_Interrupt_Number <= (79)))
+		else  if ((IntCtrl_Configuration[i].IntCtrl_Exeption_And_Interrupt_Number >= (48)) && (IntCtrl_Configuration[i].IntCtrl_Exeption_And_Interrupt_Number <= (79)))
 		{
-		  SET_BIT(*(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_EN1_BASE_OFFSET) , (((IntCtrl_Configuration[i].IntCtrl_Exeption_And_Interrupt_Number)-(16))%(32)));
+		  SET_BIT(*(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_EN1_BASE_OFFSET) , (((IntCtrl_Configuration[i].IntCtrl_Exeption_And_Interrupt_Number)+(16))%(32)));
 		}
 		else if ((IntCtrl_Configuration[i].IntCtrl_Exeption_And_Interrupt_Number >= (80)) && (IntCtrl_Configuration[i].IntCtrl_Exeption_And_Interrupt_Number <= (111)))
 		{
-		  SET_BIT(*(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_EN2_BASE_OFFSET) , (((IntCtrl_Configuration[i].IntCtrl_Exeption_And_Interrupt_Number)-(16))%(32)));
+		  SET_BIT(*(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_EN2_BASE_OFFSET) , (((IntCtrl_Configuration[i].IntCtrl_Exeption_And_Interrupt_Number)+(16))%(32)));
 		}
 		else if ((IntCtrl_Configuration[i].IntCtrl_Exeption_And_Interrupt_Number >= (112)) && (IntCtrl_Configuration[i].IntCtrl_Exeption_And_Interrupt_Number <= (143)))
 		{
-		  SET_BIT(*(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_EN3_BASE_OFFSET) , (((IntCtrl_Configuration[i].IntCtrl_Exeption_And_Interrupt_Number)-(16))%(32)));
+		  SET_BIT(*(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_EN3_BASE_OFFSET) , (((IntCtrl_Configuration[i].IntCtrl_Exeption_And_Interrupt_Number)+(16))%(32)));
 		}
 		else if ((IntCtrl_Configuration[i].IntCtrl_Exeption_And_Interrupt_Number >= (144)) && (IntCtrl_Configuration[i].IntCtrl_Exeption_And_Interrupt_Number <= (154)))
 		{
-		  SET_BIT(*(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_EN4_BASE_OFFSET) , (((IntCtrl_Configuration[i].IntCtrl_Exeption_And_Interrupt_Number)-(16))%(32)));
+		  SET_BIT(*(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_EN4_BASE_OFFSET) , (((IntCtrl_Configuration[i].IntCtrl_Exeption_And_Interrupt_Number)+(16))%(32)));
 		}
 		else 
 		{

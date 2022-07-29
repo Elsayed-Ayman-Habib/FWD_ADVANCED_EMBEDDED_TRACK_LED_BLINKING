@@ -59,7 +59,7 @@ extern const IntCtrl_ConfigType IntCtrl_ConfigPtr;
 /**********************************************************************************************************************
  *  GLOBAL FUNCTION PROTOTYPES
  *********************************************************************************************************************/
-void IntCtrl_init(void);
+void IntCtrl_init(const IntCtrl_ConfigType* ConfigPtr);
  
 #endif  /* INTCTRL.H */
 

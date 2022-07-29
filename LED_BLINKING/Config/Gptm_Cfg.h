@@ -105,11 +105,13 @@
 
 #define GPT_SYSTEM_CLOCK		16000000u
 
-#define CLEAR_BIT               0X00
-#define SET_BIT                 0X01
+#define Clear_BIT               0X00
+#define Set_BIT                 0X01
 
 #define TickFrequency           62500ul
-#define TickValueMax            62500ul
+#define TickValueMax            50
+
+#define TIMER_PRESCALER    0xFF
 
 
 

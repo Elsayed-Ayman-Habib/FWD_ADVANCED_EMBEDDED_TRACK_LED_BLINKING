@@ -17,7 +17,7 @@
 #include "Led.h"
 #include "Gptm.h"
 #include "IntCtrl.h"
-
+#include "Isr.h"
 
 /**********************************************************************************************************************
 *  LOCAL MACROS CONSTANT\FUNCTION
@@ -34,9 +34,9 @@ static boolean LedState=FALSE;
 /**********************************************************************************************************************
  *  LOCAL FUNCTION PROTOTYPES
  *********************************************************************************************************************/
-#define APPLICATION_LOGIC_CFG_ON_TIME			4 		//in seconds
-#define	APPLICATION_LOGIC_CFG_OFF_TIME		2			//in seconds
-static uint8 LocSeconds;
+#define TIME_ON			4		//in seconds
+#define	TIME_OFF	        2		//in seconds
+ uint8 TICKS=0;
 /**********************************************************************************************************************
  *  LOCAL FUNCTIONS
  *********************************************************************************************************************/
@@ -57,13 +57,14 @@ static uint8 LocSeconds;
 *******************************************************************************/
 void Init_Drivers (void)
 {
+    Enable_Exceptions();
+    Dio_Init(&Dio_Configuration);
     Port_Init(&Port_ConfigPtr);
     Gpt_init(&Gpt_ConfigPtr); 
     Gpt_EnableNotification(TIMER0_A);
-    Gpt_StartTimer (TIMER0_A,62500);
-    IntCtrl_init();
-    
- 
+    Gpt_StartTimer (TIMER0_A,62500); 
+    IntCtrl_init(&IntCtrl_ConfigPtr);
+   
 }
 
 /******************************************************************************
@@ -78,25 +79,22 @@ void Init_Drivers (void)
 *                                    E_NOT_OK                                  
 *******************************************************************************/
 void App_Start (void)
-{
-  Enable_Exceptions();
-  Init_Drivers ();
-  
+{  
+  Wait_For_Interrupt();
   if(LedState)
   {
-    if(LocSeconds>=APPLICATION_LOGIC_CFG_ON_TIME)
+    if(TICKS>=TIME_ON)
     {
       LED_OFF(RED_LED);
-      LocSeconds=0;
+      TICKS=0;
       LedState=FALSE;
     }
   }
   else
   {
-    if(LocSeconds>=APPLICATION_LOGIC_CFG_OFF_TIME)
+    if(TICKS>=TIME_OFF)
     {
       LED_ON(RED_LED);
-      LocSeconds=0;
       LedState=TRUE;
     }
   }

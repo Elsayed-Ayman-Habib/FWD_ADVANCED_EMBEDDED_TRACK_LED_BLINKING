@@ -228,7 +228,8 @@ void Gpt_init (const Gpt_ConfigType* ConfigPtr)
       
       Gpt_DisableNotification (Gpt_Configuration[i].GptChannelId);
       
-      *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAILR_BASE_OFFSET) = (((Gpt_Configuration[i].GptChannelTickValueMax)*(GPT_SYSTEM_CLOCK))/(Gpt_Configuration[i].GptChannelTickFrequency)) ;
+      *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAILR_BASE_OFFSET) = ((Gpt_Configuration[i].GptChannelTickValueMax)*(0xFFFF));
+      *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAPR_BASE_OFFSET)=TIMER_PRESCALER;
     }
     else if (((Gpt_Configuration[i].GptChannelId)%(2)) == 1)
     {
@@ -271,7 +272,8 @@ void Gpt_init (const Gpt_ConfigType* ConfigPtr)
       
       Gpt_DisableNotification (Gpt_Configuration[i].GptChannelId);
       
-      *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTBILR_BASE_OFFSET) = (((Gpt_Configuration[i].GptChannelTickValueMax)*(GPT_SYSTEM_CLOCK))/(Gpt_Configuration[i].GptChannelTickFrequency)) ;
+      *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTBILR_BASE_OFFSET) = ((Gpt_Configuration[i].GptChannelTickValueMax)*(0xFFFF)) ;
+      *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTBPR_BASE_OFFSET)=TIMER_PRESCALER;
     }
 //#endif
     /////////////////////////////////////////////////////////////////////////////////////
@@ -1105,16 +1107,13 @@ void Gpt_StartTimer (Gpt_ChannelType Channel,Gpt_ValueType Value)
   if ( ((Gpt_Configuration[Channel].GptChannelId)%(2)) == 0 )
   {
     *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAILR_BASE_OFFSET) = (uint16)Value; // put the value
-    // SET_BIT(*(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMCTL_BASE_OFFSET)  , TIMER_A);
     
     *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMCTL_BASE_OFFSET) &=  GPT_GPTMCTL_TAEN_MASK;
     *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMCTL_BASE_OFFSET) |= TIMER_A_ENABLE;
     
-    //SET_BIT(*(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAMR_BASE_OFFSET) , TIMER_A_INTERRUPT);
     *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAMR_BASE_OFFSET) &=  GPT_GPTMTAMR_TAMIE_MASK;
     *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAMR_BASE_OFFSET) |= TIMER_A_INTERRUPT;
     
-    //SET_BIT(*(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMIMR_BASE_OFFSET)  , TIMER_A);
     *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMIMR_BASE_OFFSET) &=  GPT_GPTMIMR_TATOIM_MASK;
     *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMIMR_BASE_OFFSET) |= TIMER_A_ENABLE;
     
@@ -1122,15 +1121,13 @@ void Gpt_StartTimer (Gpt_ChannelType Channel,Gpt_ValueType Value)
   else if ( ((Gpt_Configuration[Channel].GptChannelId)%(2)) == 1 )
   {
     *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTBILR_BASE_OFFSET) = (uint16)Value; // put the value
-    //SET_BIT(*(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMCTL_BASE_OFFSET)  , TIMER_B);
+    
     *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMCTL_BASE_OFFSET) &=  GPT_GPTMCTL_TBEN_MASK;
     *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMCTL_BASE_OFFSET) |= TIMER_B_ENABLE;
     
-    //SET_BIT(*(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTBMR_BASE_OFFSET) , TIMER_B_INTERRUPT);
     *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAMR_BASE_OFFSET) &=  GPT_GPTMTAMR_TAMIE_MASK;
     *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAMR_BASE_OFFSET) |= TIMER_B_INTERRUPT;
     
-    //SET_BIT(*(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMIMR_BASE_OFFSET)  , TIMER_B);
     *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMIMR_BASE_OFFSET) &=  GPT_GPTMIMR_TBTOIM_MASK;
     *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMIMR_BASE_OFFSET) |= TIMER_B_ENABLE;
   }
@@ -1433,17 +1430,18 @@ Gpt_ValueType Gpt_TimerRemaining (Gpt_ChannelType Channel)
 * \Return value:   : Std_ReturnType  E_OK
 *                                    E_NOT_OK                                  
 *******************************************************************************/
+void TIMER0A_Handler(void) __attribute__((used));
 void TIMER0A_Handler(void)
 {
   volatile uint32 * GPTM_Ptr = (volatile uint32 *)GPT_16_32_BIT_TIMER_0_BASE_ADDRESS;
-  
+ 
   if(GptNotification[0] != NULL_PTR)
   {
     /*Call the funciton*/
     GptNotification[0]();
     
     /*Clear the flag*/
-    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMICR_BASE_OFFSET) = SET_BIT;
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMICR_BASE_OFFSET) = Set_BIT;
   }
   else 
   {
@@ -1464,6 +1462,7 @@ void TIMER0A_Handler(void)
 * \Return value:   : Std_ReturnType  E_OK
 *                                    E_NOT_OK                                  
 *******************************************************************************/
+void TIMER1A_Handler(void) __attribute__((used));
 void TIMER1A_Handler(void)
 {
   volatile uint32 * GPTM_Ptr = (volatile uint32 *)GPT_16_32_BIT_TIMER_1_BASE_ADDRESS;
@@ -1474,7 +1473,7 @@ void TIMER1A_Handler(void)
     GptNotification[2]();
     
     /*Clear the flag*/
-    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMICR_BASE_OFFSET) = SET_BIT;
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMICR_BASE_OFFSET) = Set_BIT;
   }
   else 
   {
@@ -1494,6 +1493,7 @@ void TIMER1A_Handler(void)
 * \Return value:   : Std_ReturnType  E_OK
 *                                    E_NOT_OK                                  
 *******************************************************************************/
+void TIMER2A_Handler(void) __attribute__((used));
 void TIMER2A_Handler(void)
 {
   volatile uint32 * GPTM_Ptr = (volatile uint32 *)GPT_16_32_BIT_TIMER_2_BASE_ADDRESS;
@@ -1504,7 +1504,7 @@ void TIMER2A_Handler(void)
     GptNotification[4]();
     
     /*Clear the flag*/
-    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMICR_BASE_OFFSET) = SET_BIT;
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMICR_BASE_OFFSET) = Set_BIT;
   }
   else 
   {

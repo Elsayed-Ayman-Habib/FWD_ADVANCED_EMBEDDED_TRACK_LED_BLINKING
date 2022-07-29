@@ -41,8 +41,23 @@ STATIC uint8 Dio_Status = DIO_NOT_INITIALIZED;
 /**********************************************************************************************************************
  *  GLOBAL FUNCTIONS
  *********************************************************************************************************************/
+/******************************************************************************
+* \Syntax          : Std_ReturnType Dio_ReadChannel(Dio_ChannelType ChannelId)        
+* \Description     : Function to return the value of the specified DIO_channel                                    
+*                                                                             
+* \Sync\Async      : Synchronous                                               
+* \Reentrancy      : Non Reentrant                                             
+* \Parameters (in) : Dio_ChannelType ChannelId                     
+* \Parameters (out): VALUE_READ                                                      
+* \Return value:   : boolean  STD_HIGH
+*                             STD_LOW                                  
+*******************************************************************************/
 
-
+void Dio_Init(const Dio_ConfigType * ConfigPtr)
+{
+        Dio_Status       = DIO_INITIALIZED;
+        Dio_PortChannels = ConfigPtr->Channels; /* address of the first Channels structure --> Channels[0] */
+}
 /******************************************************************************
 * \Syntax          : Std_ReturnType Dio_ReadChannel(Dio_ChannelType ChannelId)        
 * \Description     : Function to return the value of the specified DIO_channel                                    
@@ -57,7 +72,7 @@ STATIC uint8 Dio_Status = DIO_NOT_INITIALIZED;
 Dio_LevelType Dio_ReadChannel(Dio_ChannelType ChannelId)
 {
 	volatile uint32 * Port_Ptr = NULL_PTR;
-	boolean VALUE_READ = STD_LOW;
+	boolean VALUE_READ = STD_LOW; 
 		switch(Dio_PortChannels[ChannelId].Port_Num)
 		{
             case 0:    Port_Ptr = &GPIO_PORTA_DATA_REG;

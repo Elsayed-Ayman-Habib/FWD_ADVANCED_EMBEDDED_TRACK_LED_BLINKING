@@ -16,6 +16,7 @@
 #include "Std_Types.h" 
 #include "Common_Macros.h" 
 #include "Dio_Cfg.h"
+#include "Port_Regs.h"
 
 /**********************************************************************************************************************
  *  GLOBAL CONSTANT MACROS
@@ -50,8 +51,9 @@ typedef struct
 
 typedef struct
 {
-        Dio_ChannelType Channel_Num;
-	Dio_PortType Port_Num;
+        Dio_PortType Port_Num;
+        Dio_ChannelType Channel_Num ;
+	
 }Dio_ConfigChannel;
 
 typedef struct Dio_ConfigType
@@ -68,6 +70,8 @@ extern const Dio_ConfigType Dio_Configuration;
 /**********************************************************************************************************************
  *  GLOBAL FUNCTION PROTOTYPES
  *********************************************************************************************************************/
+void Dio_Init(const Dio_ConfigType * ConfigPtr);
+
 /* Function prototype of DIO_read_Port_API */
 Dio_LevelType Dio_ReadChannel(Dio_ChannelType ChannelId);
 

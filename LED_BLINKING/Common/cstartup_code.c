@@ -115,6 +115,12 @@ __weak void DebugMon_Handler( void ) { while (1) {} }
 __weak void PendSV_Handler( void ) { while (1) {} }
 #pragma call_graph_root = "interrupt"
 __weak void SysTick_Handler( void ) { while (1) {} }
+#pragma call_graph_root = "interrupt"
+__weak void TIMER0A_Handler( void ) { while (1) {} }
+#pragma call_graph_root = "interrupt"
+__weak void TIMER1A_Handler( void ) { while (1) {} }
+#pragma call_graph_root = "interrupt"
+__weak void TIMER2A_Handler( void ) { while (1) {} }
 
 
 void __cmain( void );
