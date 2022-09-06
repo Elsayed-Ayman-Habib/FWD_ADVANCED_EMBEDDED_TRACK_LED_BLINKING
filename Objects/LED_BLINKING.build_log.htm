@@ -1,0 +1,1978 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.29.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Elsayed Ayman, HP Inc., LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.29.0.0
+Toolchain Path:  D:\Keil\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.13.1
+Assembler:       Armasm.exe V6.13.1
+Linker/Locator:  ArmLink.exe V6.13.1
+Library Manager: ArmAr.exe V6.13.1
+Hex Converter:   FromElf.exe V6.13.1
+CPU DLL:         SARMCM3.DLL V5.29.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.163.0.0
+Dialog DLL:      TCM.DLL V1.36.5.0
+ 
+<h2>Project:</h2>
+D:\Courses\Embedded\course FWD\led_blinking\LED_BLINKING.uvprojx
+Project File Date:  08/09/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.13.1', folder: 'D:\Keil\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+Config/IntCtrl_Lcfg.c(15): warning: In file included from...
+./Inc\IntCtrl.h(12): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef INTCTRL.H
+               ^
+./Inc\IntCtrl.h(13): warning: whitespace recommended after macro name
+#define INTCTRL.H
+               ^
+Config/IntCtrl_Lcfg.c(15): warning: In file included from...
+./Inc\IntCtrl.h(18): warning: In file included from...
+./Common\Common_Macros.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef COMMON_MACROS.H
+                     ^
+./Common\Common_Macros.h(12): warning: whitespace recommended after macro name
+#define COMMON_MACROS.H
+                     ^
+Config/IntCtrl_Lcfg.c(15): warning: In file included from...
+./Inc\IntCtrl.h(19): warning: In file included from...
+./Config\IntCtrl_Cfg.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef INTCTRL_CFG.H
+                   ^
+./Config\IntCtrl_Cfg.h(12): warning: whitespace recommended after macro name
+#define INTCTRL_CFG.H
+                   ^
+Config/IntCtrl_Lcfg.c(15): warning: In file included from...
+./Inc\IntCtrl.h(20): warning: In file included from...
+./Common\Std_Types.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef STD_TYPES_H.H
+                   ^
+./Common\Std_Types.h(12): warning: whitespace recommended after macro name
+#define STD_TYPES_H.H
+                   ^
+Config/IntCtrl_Lcfg.c(15): warning: In file included from...
+./Inc\IntCtrl.h(20): warning: In file included from...
+./Common\Std_Types.h(17): warning: In file included from...
+./Common/Platform_Types.h(49): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef unsigned long long    uint64;         /*                     0..1844674407370955161  */
+                 ^
+./Common/Platform_Types.h(50): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef signed long long      sint64;         /* -9223372036854775808 .. 9223372036854775807 */
+               ^
+Config/IntCtrl_Lcfg.c(15): warning: In file included from...
+./Inc\IntCtrl.h(20): warning: In file included from...
+./Common\Std_Types.h(18): warning: In file included from...
+./Common/Compiler.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef COMPILER_H.H
+                  ^
+./Common/Compiler.h(12): warning: whitespace recommended after macro name
+#define COMPILER_H.H
+                  ^
+Config/IntCtrl_Lcfg.c(15): warning: In file included from...
+./Inc\IntCtrl.h(153): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+        NVIC_PWM1_Fault                                                 ,               /*138*/
+                                                                        ^
+Config/IntCtrl_Lcfg.c(29): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+  NVIC_16_32_Bit_Timer_0_A                            ,INTCTRL_GROUP0                                   ,INTCTRL_SUBGROUP0     
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  {                                                                                                                       }
+14 warnings generated.
+compiling IntCtrl_Lcfg.c...
+Config/Port_Lcfg.c(15): warning: In file included from...
+./Inc\Port.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef PORT.H
+            ^
+./Inc\Port.h(12): warning: whitespace recommended after macro name
+#define PORT.H
+            ^
+Config/Port_Lcfg.c(15): warning: In file included from...
+./Inc\Port.h(17): warning: In file included from...
+./Common\Common_Macros.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef COMMON_MACROS.H
+                     ^
+./Common\Common_Macros.h(12): warning: whitespace recommended after macro name
+#define COMMON_MACROS.H
+                     ^
+Config/Port_Lcfg.c(15): warning: In file included from...
+./Inc\Port.h(18): warning: In file included from...
+./Config\Port_Cfg.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef PORT_CFG.H
+                ^
+./Config\Port_Cfg.h(12): warning: whitespace recommended after macro name
+#define PORT_CFG.H
+                ^
+Config/Port_Lcfg.c(15): warning: In file included from...
+./Inc\Port.h(19): warning: In file included from...
+./Common\Std_Types.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef STD_TYPES_H.H
+                   ^
+./Common\Std_Types.h(12): warning: whitespace recommended after macro name
+#define STD_TYPES_H.H
+                   ^
+Config/Port_Lcfg.c(15): warning: In file included from...
+./Inc\Port.h(19): warning: In file included from...
+./Common\Std_Types.h(17): warning: In file included from...
+./Common/Platform_Types.h(49): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef unsigned long long    uint64;         /*                     0..1844674407370955161  */
+                 ^
+./Common/Platform_Types.h(50): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef signed long long      sint64;         /* -9223372036854775808 .. 9223372036854775807 */
+               ^
+Config/Port_Lcfg.c(15): warning: In file included from...
+./Inc\Port.h(19): warning: In file included from...
+./Common\Std_Types.h(18): warning: In file included from...
+./Common/Compiler.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef COMPILER_H.H
+                  ^
+./Common/Compiler.h(12): warning: whitespace recommended after macro name
+#define COMPILER_H.H
+                  ^
+Config/Port_Lcfg.c(29): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortA , PORT_Pin0, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA, 
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(39): note: expanded from macro 'PORT_PortA'
+#define PORT_PortA                    (0U)
+                                      ^
+Config/Port_Lcfg.c(30): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortA , PORT_Pin1, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(39): note: expanded from macro 'PORT_PortA'
+#define PORT_PortA                    (0U)
+                                      ^
+Config/Port_Lcfg.c(31): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortA , PORT_Pin2, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(39): note: expanded from macro 'PORT_PortA'
+#define PORT_PortA                    (0U)
+                                      ^
+Config/Port_Lcfg.c(32): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortA , PORT_Pin3, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(39): note: expanded from macro 'PORT_PortA'
+#define PORT_PortA                    (0U)
+                                      ^
+Config/Port_Lcfg.c(33): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortA , PORT_Pin4, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(39): note: expanded from macro 'PORT_PortA'
+#define PORT_PortA                    (0U)
+                                      ^
+Config/Port_Lcfg.c(34): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortA , PORT_Pin5, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(39): note: expanded from macro 'PORT_PortA'
+#define PORT_PortA                    (0U)
+                                      ^
+Config/Port_Lcfg.c(35): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortA , PORT_Pin6, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(39): note: expanded from macro 'PORT_PortA'
+#define PORT_PortA                    (0U)
+                                      ^
+Config/Port_Lcfg.c(36): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortA , PORT_Pin7, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(39): note: expanded from macro 'PORT_PortA'
+#define PORT_PortA                    (0U)
+                                      ^
+Config/Port_Lcfg.c(38): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortB , PORT_Pin0, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(40): note: expanded from macro 'PORT_PortB'
+#define PORT_PortB                    (1U)
+                                      ^
+Config/Port_Lcfg.c(39): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortB , PORT_Pin1, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(40): note: expanded from macro 'PORT_PortB'
+#define PORT_PortB                    (1U)
+                                      ^
+Config/Port_Lcfg.c(40): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortB , PORT_Pin2, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(40): note: expanded from macro 'PORT_PortB'
+#define PORT_PortB                    (1U)
+                                      ^
+Config/Port_Lcfg.c(41): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortB , PORT_Pin3, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(40): note: expanded from macro 'PORT_PortB'
+#define PORT_PortB                    (1U)
+                                      ^
+Config/Port_Lcfg.c(42): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortB , PORT_Pin4, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(40): note: expanded from macro 'PORT_PortB'
+#define PORT_PortB                    (1U)
+                                      ^
+Config/Port_Lcfg.c(43): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortB , PORT_Pin5, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(40): note: expanded from macro 'PORT_PortB'
+#define PORT_PortB                    (1U)
+                                      ^
+Config/Port_Lcfg.c(44): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortB , PORT_Pin6, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(40): note: expanded from macro 'PORT_PortB'
+#define PORT_PortB                    (1U)
+                                      ^
+Config/Port_Lcfg.c(45): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortB , PORT_Pin7, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(40): note: expanded from macro 'PORT_PortB'
+#define PORT_PortB                    (1U)
+                                      ^
+Config/Port_Lcfg.c(47): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortC , PORT_Pin0, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(41): note: expanded from macro 'PORT_PortC'
+#define PORT_PortC                    (2U)
+                                      ^
+Config/Port_Lcfg.c(48): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortC , PORT_Pin1, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(41): note: expanded from macro 'PORT_PortC'
+#define PORT_PortC                    (2U)
+                                      ^
+Config/Port_Lcfg.c(49): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortC , PORT_Pin2, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(41): note: expanded from macro 'PORT_PortC'
+#define PORT_PortC                    (2U)
+                                      ^
+Config/Port_Lcfg.c(50): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortC , PORT_Pin3, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(41): note: expanded from macro 'PORT_PortC'
+#define PORT_PortC                    (2U)
+                                      ^
+Config/Port_Lcfg.c(51): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortC , PORT_Pin4, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(41): note: expanded from macro 'PORT_PortC'
+#define PORT_PortC                    (2U)
+                                      ^
+Config/Port_Lcfg.c(52): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortC , PORT_Pin5, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(41): note: expanded from macro 'PORT_PortC'
+#define PORT_PortC                    (2U)
+                                      ^
+Config/Port_Lcfg.c(53): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortC , PORT_Pin6, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(41): note: expanded from macro 'PORT_PortC'
+#define PORT_PortC                    (2U)
+                                      ^
+Config/Port_Lcfg.c(54): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortC , PORT_Pin7, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(41): note: expanded from macro 'PORT_PortC'
+#define PORT_PortC                    (2U)
+                                      ^
+Config/Port_Lcfg.c(56): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortD , PORT_Pin0, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(42): note: expanded from macro 'PORT_PortD'
+#define PORT_PortD                    (3U)
+                                      ^
+Config/Port_Lcfg.c(57): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortD , PORT_Pin1, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(42): note: expanded from macro 'PORT_PortD'
+#define PORT_PortD                    (3U)
+                                      ^
+Config/Port_Lcfg.c(58): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortD , PORT_Pin2, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(42): note: expanded from macro 'PORT_PortD'
+#define PORT_PortD                    (3U)
+                                      ^
+Config/Port_Lcfg.c(59): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortD , PORT_Pin3, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(42): note: expanded from macro 'PORT_PortD'
+#define PORT_PortD                    (3U)
+                                      ^
+Config/Port_Lcfg.c(60): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortD , PORT_Pin4, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(42): note: expanded from macro 'PORT_PortD'
+#define PORT_PortD                    (3U)
+                                      ^
+Config/Port_Lcfg.c(61): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortD , PORT_Pin5, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(42): note: expanded from macro 'PORT_PortD'
+#define PORT_PortD                    (3U)
+                                      ^
+Config/Port_Lcfg.c(62): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortD , PORT_Pin6, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(42): note: expanded from macro 'PORT_PortD'
+#define PORT_PortD                    (3U)
+                                      ^
+Config/Port_Lcfg.c(63): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortD , PORT_Pin7, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(42): note: expanded from macro 'PORT_PortD'
+#define PORT_PortD                    (3U)
+                                      ^
+Config/Port_Lcfg.c(65): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortE , PORT_Pin0, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(43): note: expanded from macro 'PORT_PortE'
+#define PORT_PortE                    (4U)
+                                      ^
+Config/Port_Lcfg.c(66): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortE , PORT_Pin1, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(43): note: expanded from macro 'PORT_PortE'
+#define PORT_PortE                    (4U)
+                                      ^
+Config/Port_Lcfg.c(67): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortE , PORT_Pin2, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(43): note: expanded from macro 'PORT_PortE'
+#define PORT_PortE                    (4U)
+                                      ^
+Config/Port_Lcfg.c(68): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortE , PORT_Pin3, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(43): note: expanded from macro 'PORT_PortE'
+#define PORT_PortE                    (4U)
+                                      ^
+Config/Port_Lcfg.c(69): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortE , PORT_Pin4, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(43): note: expanded from macro 'PORT_PortE'
+#define PORT_PortE                    (4U)
+                                      ^
+Config/Port_Lcfg.c(70): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortE , PORT_Pin5, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(43): note: expanded from macro 'PORT_PortE'
+#define PORT_PortE                    (4U)
+                                      ^
+Config/Port_Lcfg.c(72): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortF , PORT_Pin0, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(44): note: expanded from macro 'PORT_PortF'
+#define PORT_PortF                    (5U)
+                                      ^
+Config/Port_Lcfg.c(73): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortF , PORT_Pin1, PORT_PIN_OUT,OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(44): note: expanded from macro 'PORT_PortF'
+#define PORT_PortF                    (5U)
+                                      ^
+Config/Port_Lcfg.c(74): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortF , PORT_Pin2, PORT_PIN_OUT,OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(44): note: expanded from macro 'PORT_PortF'
+#define PORT_PortF                    (5U)
+                                      ^
+Config/Port_Lcfg.c(75): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortF , PORT_Pin3, PORT_PIN_OUT,OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA,
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(44): note: expanded from macro 'PORT_PortF'
+#define PORT_PortF                    (5U)
+                                      ^
+Config/Port_Lcfg.c(76): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                PORT_PortF , PORT_Pin4, PORT_PIN_IN, OPEN_DRAIN, PORT_PIN_LEVEL_LOW , PORT_PIN_MODE_DIO , OUT_CURRENT_NA
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                                                                                       }
+./Config\Port_Cfg.h(44): note: expanded from macro 'PORT_PortF'
+#define PORT_PortF                    (5U)
+                                      ^
+55 warnings generated.
+compiling Port_Lcfg.c...
+Config/Dio_PBcfg.c(15): warning: In file included from...
+./Inc\Dio.h(10): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef DIO.H
+           ^
+./Inc\Dio.h(11): warning: whitespace recommended after macro name
+#define DIO.H
+           ^
+Config/Dio_PBcfg.c(15): warning: In file included from...
+./Inc\Dio.h(16): warning: In file included from...
+./Common\Std_Types.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef STD_TYPES_H.H
+                   ^
+./Common\Std_Types.h(12): warning: whitespace recommended after macro name
+#define STD_TYPES_H.H
+                   ^
+Config/Dio_PBcfg.c(15): warning: In file included from...
+./Inc\Dio.h(16): warning: In file included from...
+./Common\Std_Types.h(17): warning: In file included from...
+./Common/Platform_Types.h(49): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef unsigned long long    uint64;         /*                     0..1844674407370955161  */
+                 ^
+./Common/Platform_Types.h(50): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef signed long long      sint64;         /* -9223372036854775808 .. 9223372036854775807 */
+               ^
+Config/Dio_PBcfg.c(15): warning: In file included from...
+./Inc\Dio.h(16): warning: In file included from...
+./Common\Std_Types.h(18): warning: In file included from...
+./Common/Compiler.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef COMPILER_H.H
+                  ^
+./Common/Compiler.h(12): warning: whitespace recommended after macro name
+#define COMPILER_H.H
+                  ^
+Config/Dio_PBcfg.c(15): warning: In file included from...
+./Inc\Dio.h(17): warning: In file included from...
+./Common\Common_Macros.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef COMMON_MACROS.H
+                     ^
+./Common\Common_Macros.h(12): warning: whitespace recommended after macro name
+#define COMMON_MACROS.H
+                     ^
+Config/Dio_PBcfg.c(15): warning: In file included from...
+./Inc\Dio.h(18): warning: In file included from...
+./Config\Dio_Cfg.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef DIO_CFG.H
+               ^
+./Config\Dio_Cfg.h(12): warning: whitespace recommended after macro name
+#define DIO_CFG.H
+               ^
+Config/Dio_PBcfg.c(15): warning: In file included from...
+./Inc\Dio.h(19): warning: In file included from...
+./Inc/Port_Regs.h(53): warning: no newline at end of file [-Wnewline-eof]
+#endif /* PORT_REGS_H */
+                        ^
+Config/Dio_PBcfg.c(15): warning: In file included from...
+./Inc\Dio.h(95): warning: no newline at end of file [-Wnewline-eof]
+ *********************************************************************************************************************/
+                                                                                                                       ^
+Config/Dio_PBcfg.c(30): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                                             DioConf_LED1_PORT_NUM,DioConf_LED1_CHANNEL_NUM,
+                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                             {                                             }
+./Config\Dio_Cfg.h(40): note: expanded from macro 'DioConf_LED1_PORT_NUM'
+#define DioConf_LED1_PORT_NUM                (Dio_PortType)5 /* PORTF */
+                                             ^
+Config/Dio_PBcfg.c(31): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                                             DioConf_LED2_PORT_NUM,DioConf_LED2_CHANNEL_NUM,
+                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                             {                                             }
+./Config\Dio_Cfg.h(41): note: expanded from macro 'DioConf_LED2_PORT_NUM'
+#define DioConf_LED2_PORT_NUM                (Dio_PortType)5 /* PORTF */
+                                             ^
+Config/Dio_PBcfg.c(32): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                                             DioConf_LED3_PORT_NUM,DioConf_LED3_CHANNEL_NUM
+                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                             {                                             }
+./Config\Dio_Cfg.h(42): note: expanded from macro 'DioConf_LED3_PORT_NUM'
+#define DioConf_LED3_PORT_NUM                (Dio_PortType)5 /* PORTF */
+                                             ^
+17 warnings generated.
+compiling Dio_PBcfg.c...
+Config/Gpt_Lcfg.c(15): warning: In file included from...
+./Inc\Gptm.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef GPTM.H
+            ^
+./Inc\Gptm.h(12): warning: whitespace recommended after macro name
+#define GPTM.H
+            ^
+Config/Gpt_Lcfg.c(15): warning: In file included from...
+./Inc\Gptm.h(17): warning: In file included from...
+./Common\Common_Macros.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef COMMON_MACROS.H
+                     ^
+./Common\Common_Macros.h(12): warning: whitespace recommended after macro name
+#define COMMON_MACROS.H
+                     ^
+Config/Gpt_Lcfg.c(15): warning: In file included from...
+./Inc\Gptm.h(18): warning: In file included from...
+./Config\Gptm_Cfg.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef GPTM_CFG.H
+                ^
+./Config\Gptm_Cfg.h(12): warning: whitespace recommended after macro name
+#define GPTM_CFG.H
+                ^
+Config/Gpt_Lcfg.c(15): warning: In file included from...
+./Inc\Gptm.h(19): warning: In file included from...
+./Common\Std_Types.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef STD_TYPES_H.H
+                   ^
+./Common\Std_Types.h(12): warning: whitespace recommended after macro name
+#define STD_TYPES_H.H
+                   ^
+Config/Gpt_Lcfg.c(15): warning: In file included from...
+./Inc\Gptm.h(19): warning: In file included from...
+./Common\Std_Types.h(17): warning: In file included from...
+./Common/Platform_Types.h(49): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef unsigned long long    uint64;         /*                     0..1844674407370955161  */
+                 ^
+./Common/Platform_Types.h(50): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef signed long long      sint64;         /* -9223372036854775808 .. 9223372036854775807 */
+               ^
+Config/Gpt_Lcfg.c(15): warning: In file included from...
+./Inc\Gptm.h(19): warning: In file included from...
+./Common\Std_Types.h(18): warning: In file included from...
+./Common/Compiler.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef COMPILER_H.H
+                  ^
+./Common/Compiler.h(12): warning: whitespace recommended after macro name
+#define COMPILER_H.H
+                  ^
+Config/Gpt_Lcfg.c(15): warning: In file included from...
+./Inc\Gptm.h(63): warning: padding struct 'Gpt_ConfigChannel' with 1 byte to align 'GptChannelTickFrequency' [-Wpadded]
+  Gpt_ValueType        GptChannelTickFrequency;
+                       ^
+./Inc\Gptm.h(67): warning: padding struct 'Gpt_ConfigChannel' with 2 bytes to align 'GptNotifcation' [-Wpadded]
+  void                 (*GptNotifcation)(void);
+                         ^
+Config/Gpt_Lcfg.c(16): warning: In file included from...
+./App\App.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef APP.H
+           ^
+./App\App.h(12): warning: whitespace recommended after macro name
+#define APP.H
+           ^
+Config/Gpt_Lcfg.c(16): warning: In file included from...
+./App\App.h(18): warning: In file included from...
+./App/Led.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef LED.H
+           ^
+./App/Led.h(12): warning: whitespace recommended after macro name
+#define LED.H
+           ^
+Config/Gpt_Lcfg.c(16): warning: In file included from...
+./App\App.h(18): warning: In file included from...
+./App/Led.h(17): warning: In file included from...
+./Inc\Port.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef PORT.H
+            ^
+./Inc\Port.h(12): warning: whitespace recommended after macro name
+#define PORT.H
+            ^
+Config/Gpt_Lcfg.c(16): warning: In file included from...
+./App\App.h(18): warning: In file included from...
+./App/Led.h(17): warning: In file included from...
+./Inc\Port.h(18): warning: In file included from...
+./Config\Port_Cfg.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef PORT_CFG.H
+                ^
+./Config\Port_Cfg.h(12): warning: whitespace recommended after macro name
+#define PORT_CFG.H
+                ^
+Config/Gpt_Lcfg.c(16): warning: In file included from...
+./App\App.h(18): warning: In file included from...
+./App/Led.h(18): warning: In file included from...
+./Inc\Dio.h(10): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef DIO.H
+           ^
+./Inc\Dio.h(11): warning: whitespace recommended after macro name
+#define DIO.H
+           ^
+Config/Gpt_Lcfg.c(16): warning: In file included from...
+./App\App.h(18): warning: In file included from...
+./App/Led.h(18): warning: In file included from...
+./Inc\Dio.h(18): warning: In file included from...
+./Config\Dio_Cfg.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef DIO_CFG.H
+               ^
+./Config\Dio_Cfg.h(12): warning: whitespace recommended after macro name
+#define DIO_CFG.H
+               ^
+Config/Gpt_Lcfg.c(16): warning: In file included from...
+./App\App.h(18): warning: In file included from...
+./App/Led.h(18): warning: In file included from...
+./Inc\Dio.h(19): warning: In file included from...
+./Inc/Port_Regs.h(53): warning: no newline at end of file [-Wnewline-eof]
+#endif /* PORT_REGS_H */
+                        ^
+Config/Gpt_Lcfg.c(16): warning: In file included from...
+./App\App.h(18): warning: In file included from...
+./App/Led.h(18): warning: In file included from...
+./Inc\Dio.h(95): warning: no newline at end of file [-Wnewline-eof]
+ *********************************************************************************************************************/
+                                                                                                                       ^
+Config/Gpt_Lcfg.c(16): warning: In file included from...
+./App\App.h(18): warning: In file included from...
+./App/Led.h(19): warning: In file included from...
+./App/Led_Cfg.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef LED_CFG.H
+               ^
+./App/Led_Cfg.h(12): warning: whitespace recommended after macro name
+#define LED_CFG.H
+               ^
+Config/Gpt_Lcfg.c(33): warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                         TIMER0_A       ,GPT_MODE_NORMAL,INITIALIZED,TickFrequency,TickValueMax,INTERRUPT_ON ,GPT_CONTINUOUS,Timer0A_ISR
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                         {                                                                                                              }
+./Config\Gptm_Cfg.h(24): note: expanded from macro 'TIMER0_A'
+#define TIMER0_A  0
+                  ^
+31 warnings generated.
+compiling Gpt_Lcfg.c...
+App/main.c(1): warning: In file included from...
+./App/App.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef APP.H
+           ^
+./App/App.h(12): warning: whitespace recommended after macro name
+#define APP.H
+           ^
+App/main.c(1): warning: In file included from...
+./App/App.h(17): warning: In file included from...
+./Common\Std_Types.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef STD_TYPES_H.H
+                   ^
+./Common\Std_Types.h(12): warning: whitespace recommended after macro name
+#define STD_TYPES_H.H
+                   ^
+App/main.c(1): warning: In file included from...
+./App/App.h(17): warning: In file included from...
+./Common\Std_Types.h(17): warning: In file included from...
+./Common/Platform_Types.h(49): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef unsigned long long    uint64;         /*                     0..1844674407370955161  */
+                 ^
+./Common/Platform_Types.h(50): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef signed long long      sint64;         /* -9223372036854775808 .. 9223372036854775807 */
+               ^
+App/main.c(1): warning: In file included from...
+./App/App.h(17): warning: In file included from...
+./Common\Std_Types.h(18): warning: In file included from...
+./Common/Compiler.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef COMPILER_H.H
+                  ^
+./Common/Compiler.h(12): warning: whitespace recommended after macro name
+#define COMPILER_H.H
+                  ^
+App/main.c(1): warning: In file included from...
+./App/App.h(18): warning: In file included from...
+./App/Led.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef LED.H
+           ^
+./App/Led.h(12): warning: whitespace recommended after macro name
+#define LED.H
+           ^
+App/main.c(1): warning: In file included from...
+./App/App.h(18): warning: In file included from...
+./App/Led.h(17): warning: In file included from...
+./Inc\Port.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef PORT.H
+            ^
+./Inc\Port.h(12): warning: whitespace recommended after macro name
+#define PORT.H
+            ^
+App/main.c(1): warning: In file included from...
+./App/App.h(18): warning: In file included from...
+./App/Led.h(17): warning: In file included from...
+./Inc\Port.h(17): warning: In file included from...
+./Common\Common_Macros.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef COMMON_MACROS.H
+                     ^
+./Common\Common_Macros.h(12): warning: whitespace recommended after macro name
+#define COMMON_MACROS.H
+                     ^
+App/main.c(1): warning: In file included from...
+./App/App.h(18): warning: In file included from...
+./App/Led.h(17): warning: In file included from...
+./Inc\Port.h(18): warning: In file included from...
+./Config\Port_Cfg.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef PORT_CFG.H
+                ^
+./Config\Port_Cfg.h(12): warning: whitespace recommended after macro name
+#define PORT_CFG.H
+                ^
+App/main.c(1): warning: In file included from...
+./App/App.h(18): warning: In file included from...
+./App/Led.h(18): warning: In file included from...
+./Inc\Dio.h(10): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef DIO.H
+           ^
+./Inc\Dio.h(11): warning: whitespace recommended after macro name
+#define DIO.H
+           ^
+App/main.c(1): warning: In file included from...
+./App/App.h(18): warning: In file included from...
+./App/Led.h(18): warning: In file included from...
+./Inc\Dio.h(18): warning: In file included from...
+./Config\Dio_Cfg.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef DIO_CFG.H
+               ^
+./Config\Dio_Cfg.h(12): warning: whitespace recommended after macro name
+#define DIO_CFG.H
+               ^
+App/main.c(1): warning: In file included from...
+./App/App.h(18): warning: In file included from...
+./App/Led.h(18): warning: In file included from...
+./Inc\Dio.h(19): warning: In file included from...
+./Inc/Port_Regs.h(53): warning: no newline at end of file [-Wnewline-eof]
+#endif /* PORT_REGS_H */
+                        ^
+App/main.c(1): warning: In file included from...
+./App/App.h(18): warning: In file included from...
+./App/Led.h(18): warning: In file included from...
+./Inc\Dio.h(95): warning: no newline at end of file [-Wnewline-eof]
+ *********************************************************************************************************************/
+                                                                                                                       ^
+App/main.c(1): warning: In file included from...
+./App/App.h(18): warning: In file included from...
+./App/Led.h(19): warning: In file included from...
+./App/Led_Cfg.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef LED_CFG.H
+               ^
+./App/Led_Cfg.h(12): warning: whitespace recommended after macro name
+#define LED_CFG.H
+               ^
+App/main.c(2): warning: In file included from...
+./Inc\Gptm.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef GPTM.H
+            ^
+./Inc\Gptm.h(12): warning: whitespace recommended after macro name
+#define GPTM.H
+            ^
+App/main.c(2): warning: In file included from...
+./Inc\Gptm.h(18): warning: In file included from...
+./Config\Gptm_Cfg.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef GPTM_CFG.H
+                ^
+./Config\Gptm_Cfg.h(12): warning: whitespace recommended after macro name
+#define GPTM_CFG.H
+                ^
+App/main.c(2): warning: In file included from...
+./Inc\Gptm.h(63): warning: padding struct 'Gpt_ConfigChannel' with 1 byte to align 'GptChannelTickFrequency' [-Wpadded]
+  Gpt_ValueType        GptChannelTickFrequency;
+                       ^
+./Inc\Gptm.h(67): warning: padding struct 'Gpt_ConfigChannel' with 2 bytes to align 'GptNotifcation' [-Wpadded]
+  void                 (*GptNotifcation)(void);
+                         ^
+App/main.c(11): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+31 warnings generated.
+compiling main.c...
+App/Led.c(15): warning: In file included from...
+./Inc\Port.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef PORT.H
+            ^
+./Inc\Port.h(12): warning: whitespace recommended after macro name
+#define PORT.H
+            ^
+App/Led.c(15): warning: In file included from...
+./Inc\Port.h(17): warning: In file included from...
+./Common\Common_Macros.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef COMMON_MACROS.H
+                     ^
+./Common\Common_Macros.h(12): warning: whitespace recommended after macro name
+#define COMMON_MACROS.H
+                     ^
+App/Led.c(15): warning: In file included from...
+./Inc\Port.h(18): warning: In file included from...
+./Config\Port_Cfg.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef PORT_CFG.H
+                ^
+./Config\Port_Cfg.h(12): warning: whitespace recommended after macro name
+#define PORT_CFG.H
+                ^
+App/Led.c(15): warning: In file included from...
+./Inc\Port.h(19): warning: In file included from...
+./Common\Std_Types.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef STD_TYPES_H.H
+                   ^
+./Common\Std_Types.h(12): warning: whitespace recommended after macro name
+#define STD_TYPES_H.H
+                   ^
+App/Led.c(15): warning: In file included from...
+./Inc\Port.h(19): warning: In file included from...
+./Common\Std_Types.h(17): warning: In file included from...
+./Common/Platform_Types.h(49): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef unsigned long long    uint64;         /*                     0..1844674407370955161  */
+                 ^
+./Common/Platform_Types.h(50): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef signed long long      sint64;         /* -9223372036854775808 .. 9223372036854775807 */
+               ^
+App/Led.c(15): warning: In file included from...
+./Inc\Port.h(19): warning: In file included from...
+./Common\Std_Types.h(18): warning: In file included from...
+./Common/Compiler.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef COMPILER_H.H
+                  ^
+./Common/Compiler.h(12): warning: whitespace recommended after macro name
+#define COMPILER_H.H
+                  ^
+App/Led.c(16): warning: In file included from...
+./Inc\Dio.h(10): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef DIO.H
+           ^
+./Inc\Dio.h(11): warning: whitespace recommended after macro name
+#define DIO.H
+           ^
+App/Led.c(16): warning: In file included from...
+./Inc\Dio.h(18): warning: In file included from...
+./Config\Dio_Cfg.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef DIO_CFG.H
+               ^
+./Config\Dio_Cfg.h(12): warning: whitespace recommended after macro name
+#define DIO_CFG.H
+               ^
+App/Led.c(16): warning: In file included from...
+./Inc\Dio.h(19): warning: In file included from...
+./Inc/Port_Regs.h(53): warning: no newline at end of file [-Wnewline-eof]
+#endif /* PORT_REGS_H */
+                        ^
+App/Led.c(16): warning: In file included from...
+./Inc\Dio.h(95): warning: no newline at end of file [-Wnewline-eof]
+ *********************************************************************************************************************/
+                                                                                                                       ^
+App/Led.c(17): warning: In file included from...
+./App/Led.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef LED.H
+           ^
+./App/Led.h(12): warning: whitespace recommended after macro name
+#define LED.H
+           ^
+App/Led.c(17): warning: In file included from...
+./App/Led.h(19): warning: In file included from...
+./App/Led_Cfg.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef LED_CFG.H
+               ^
+./App/Led_Cfg.h(12): warning: whitespace recommended after macro name
+#define LED_CFG.H
+               ^
+22 warnings generated.
+compiling Led.c...
+MCAL/IntCtrl.c(15): warning: In file included from...
+./Inc\IntCtrl.h(12): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef INTCTRL.H
+               ^
+./Inc\IntCtrl.h(13): warning: whitespace recommended after macro name
+#define INTCTRL.H
+               ^
+MCAL/IntCtrl.c(15): warning: In file included from...
+./Inc\IntCtrl.h(18): warning: In file included from...
+./Common\Common_Macros.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef COMMON_MACROS.H
+                     ^
+./Common\Common_Macros.h(12): warning: whitespace recommended after macro name
+#define COMMON_MACROS.H
+                     ^
+MCAL/IntCtrl.c(15): warning: In file included from...
+./Inc\IntCtrl.h(19): warning: In file included from...
+./Config\IntCtrl_Cfg.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef INTCTRL_CFG.H
+                   ^
+./Config\IntCtrl_Cfg.h(12): warning: whitespace recommended after macro name
+#define INTCTRL_CFG.H
+                   ^
+MCAL/IntCtrl.c(15): warning: In file included from...
+./Inc\IntCtrl.h(20): warning: In file included from...
+./Common\Std_Types.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef STD_TYPES_H.H
+                   ^
+./Common\Std_Types.h(12): warning: whitespace recommended after macro name
+#define STD_TYPES_H.H
+                   ^
+MCAL/IntCtrl.c(15): warning: In file included from...
+./Inc\IntCtrl.h(20): warning: In file included from...
+./Common\Std_Types.h(17): warning: In file included from...
+./Common/Platform_Types.h(49): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef unsigned long long    uint64;         /*                     0..1844674407370955161  */
+                 ^
+./Common/Platform_Types.h(50): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef signed long long      sint64;         /* -9223372036854775808 .. 9223372036854775807 */
+               ^
+MCAL/IntCtrl.c(15): warning: In file included from...
+./Inc\IntCtrl.h(20): warning: In file included from...
+./Common\Std_Types.h(18): warning: In file included from...
+./Common/Compiler.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef COMPILER_H.H
+                  ^
+./Common/Compiler.h(12): warning: whitespace recommended after macro name
+#define COMPILER_H.H
+                  ^
+MCAL/IntCtrl.c(15): warning: In file included from...
+./Inc\IntCtrl.h(153): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+        NVIC_PWM1_Fault                                                 ,               /*138*/
+                                                                        ^
+MCAL/IntCtrl.c(16): warning: In file included from...
+./Inc\IntCtrl_Regs.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef INTCTRL_RGS.H
+                   ^
+./Inc\IntCtrl_Regs.h(12): warning: whitespace recommended after macro name
+#define INTCTRL_RGS.H
+                   ^
+MCAL/IntCtrl.c(63): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+  for(uint8 i = 0; i < INTCTRL_CONFIGURED_INTERRUPT ; i++)
+      ^
+MCAL/IntCtrl.c(63): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+MCAL/IntCtrl.c(74): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    case 0: SET_BIT(*(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_EN0_BASE_OFFSET),OffsetBit); 
+            ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(22): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT)      (REG|=(1<<BIT))
+                               ^~~
+MCAL/IntCtrl.c(76): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    case 1: SET_BIT(*(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_EN1_BASE_OFFSET),OffsetBit); 
+            ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(22): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT)      (REG|=(1<<BIT))
+                               ^~~
+MCAL/IntCtrl.c(78): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    case 2: SET_BIT(*(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_EN2_BASE_OFFSET),OffsetBit); 
+            ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(22): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT)      (REG|=(1<<BIT))
+                               ^~~
+MCAL/IntCtrl.c(80): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    case 3: SET_BIT(*(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_EN3_BASE_OFFSET),OffsetBit); 
+            ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(22): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT)      (REG|=(1<<BIT))
+                               ^~~
+MCAL/IntCtrl.c(90): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      *(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_APINT_BASE_OFFSET) = ((((INTCTRL_VALUE_TO_WRITE_NUMBER) << (APINT_VECTKEY_NUM))&((INTCTRL_APINT_VECTKEY_MASK)))+((NVIC_PRIORITY_GROUPS_7_SUB_0) << (APINT_PRIGROUP_NUM))); 
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/IntCtrl.c(99): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    case 0 : *(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_PRI5_BASE_OFFSET) = ((( INTCTRL_PRIX_BASE_ADDRESS + INTCTRL_PRI5_BASE_OFFSET )&(INTCTRL_PRIX_INTA_MASK))|((IntCtrl_Configuration[i].group) << (PRIX_INTA_NUM)));
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/IntCtrl.c(99): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    case 0 : *(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_PRI5_BASE_OFFSET) = ((( INTCTRL_PRIX_BASE_ADDRESS + INTCTRL_PRI5_BASE_OFFSET )&(INTCTRL_PRIX_INTA_MASK))|((IntCtrl_Configuration[i].group) << (PRIX_INTA_NUM)));
+                                                                                                                                                                                            ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+MCAL/IntCtrl.c(101): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    case 1 : *(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_PRI5_BASE_OFFSET) = ((( INTCTRL_PRIX_BASE_ADDRESS + INTCTRL_PRI5_BASE_OFFSET )&(INTCTRL_PRIX_INTB_MASK))|((IntCtrl_Configuration[i].group) << (PRIX_INTB_NUM)));
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/IntCtrl.c(101): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    case 1 : *(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_PRI5_BASE_OFFSET) = ((( INTCTRL_PRIX_BASE_ADDRESS + INTCTRL_PRI5_BASE_OFFSET )&(INTCTRL_PRIX_INTB_MASK))|((IntCtrl_Configuration[i].group) << (PRIX_INTB_NUM)));
+                                                                                                                                                                                            ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+MCAL/IntCtrl.c(103): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    case 2 : *(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_PRI5_BASE_OFFSET) = ((( INTCTRL_PRIX_BASE_ADDRESS + INTCTRL_PRI5_BASE_OFFSET )&(INTCTRL_PRIX_INTC_MASK))|((IntCtrl_Configuration[i].group) << (PRIX_INTC_NUM)));
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/IntCtrl.c(103): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    case 2 : *(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_PRI5_BASE_OFFSET) = ((( INTCTRL_PRIX_BASE_ADDRESS + INTCTRL_PRI5_BASE_OFFSET )&(INTCTRL_PRIX_INTC_MASK))|((IntCtrl_Configuration[i].group) << (PRIX_INTC_NUM)));
+                                                                                                                                                                                            ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+MCAL/IntCtrl.c(105): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    case 3 : *(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_PRI5_BASE_OFFSET) = ((( INTCTRL_PRIX_BASE_ADDRESS + INTCTRL_PRI5_BASE_OFFSET )&(INTCTRL_PRIX_INTD_MASK))|((IntCtrl_Configuration[i].group) << (PRIX_INTD_NUM)));
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/IntCtrl.c(105): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    case 3 : *(volatile uint32 *)((volatile uint8 *)IntCtrl_Interrupt_Ptr + INTCTRL_PRI5_BASE_OFFSET) = ((( INTCTRL_PRIX_BASE_ADDRESS + INTCTRL_PRI5_BASE_OFFSET )&(INTCTRL_PRIX_INTD_MASK))|((IntCtrl_Configuration[i].group) << (PRIX_INTD_NUM)));
+                                                                                                                                                                                            ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+MCAL/IntCtrl.c(61): warning: ISO C90 forbids mixing declarations and code [-Wdeclaration-after-statement]
+  volatile uint32 * IntCtrl_Interrupt_Ptr = (volatile uint32 *)INTCTRL_BASE_ADDRESS;
+                    ^
+31 warnings generated.
+compiling IntCtrl.c...
+MCAL/Dio.c(15): warning: In file included from...
+./Common\Std_Types.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef STD_TYPES_H.H
+                   ^
+./Common\Std_Types.h(12): warning: whitespace recommended after macro name
+#define STD_TYPES_H.H
+                   ^
+MCAL/Dio.c(15): warning: In file included from...
+./Common\Std_Types.h(17): warning: In file included from...
+./Common/Platform_Types.h(49): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef unsigned long long    uint64;         /*                     0..1844674407370955161  */
+                 ^
+./Common/Platform_Types.h(50): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef signed long long      sint64;         /* -9223372036854775808 .. 9223372036854775807 */
+               ^
+MCAL/Dio.c(15): warning: In file included from...
+./Common\Std_Types.h(18): warning: In file included from...
+./Common/Compiler.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef COMPILER_H.H
+                  ^
+./Common/Compiler.h(12): warning: whitespace recommended after macro name
+#define COMPILER_H.H
+                  ^
+MCAL/Dio.c(16): warning: In file included from...
+./Inc\Dio.h(10): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef DIO.H
+           ^
+./Inc\Dio.h(11): warning: whitespace recommended after macro name
+#define DIO.H
+           ^
+MCAL/Dio.c(16): warning: In file included from...
+./Inc\Dio.h(17): warning: In file included from...
+./Common\Common_Macros.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef COMMON_MACROS.H
+                     ^
+./Common\Common_Macros.h(12): warning: whitespace recommended after macro name
+#define COMMON_MACROS.H
+                     ^
+MCAL/Dio.c(16): warning: In file included from...
+./Inc\Dio.h(18): warning: In file included from...
+./Config\Dio_Cfg.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef DIO_CFG.H
+               ^
+./Config\Dio_Cfg.h(12): warning: whitespace recommended after macro name
+#define DIO_CFG.H
+               ^
+MCAL/Dio.c(16): warning: In file included from...
+./Inc\Dio.h(19): warning: In file included from...
+./Inc/Port_Regs.h(53): warning: no newline at end of file [-Wnewline-eof]
+#endif /* PORT_REGS_H */
+                        ^
+MCAL/Dio.c(16): warning: In file included from...
+./Inc\Dio.h(95): warning: no newline at end of file [-Wnewline-eof]
+ *********************************************************************************************************************/
+                                                                                                                       ^
+MCAL/Dio.c(17): warning: In file included from...
+./Inc\Dio_Regs.h(12): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef DIO_REGS_H.H
+                  ^
+./Inc\Dio_Regs.h(13): warning: whitespace recommended after macro name
+#define DIO_REGS_H.H
+                  ^
+MCAL/Dio.c(214): warning: implicit conversion loses integer precision: 'volatile uint32' (aka 'volatile unsigned long') to 'uint8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  VALUE_READ = *Port_Ptr;
+             ~ ^~~~~~~~~
+17 warnings generated.
+compiling Dio.c...
+App/App.c(15): warning: In file included from...
+./Common\Std_Types.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef STD_TYPES_H.H
+                   ^
+./Common\Std_Types.h(12): warning: whitespace recommended after macro name
+#define STD_TYPES_H.H
+                   ^
+App/App.c(15): warning: In file included from...
+./Common\Std_Types.h(17): warning: In file included from...
+./Common/Platform_Types.h(49): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef unsigned long long    uint64;         /*                     0..1844674407370955161  */
+                 ^
+./Common/Platform_Types.h(50): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef signed long long      sint64;         /* -9223372036854775808 .. 9223372036854775807 */
+               ^
+App/App.c(15): warning: In file included from...
+./Common\Std_Types.h(18): warning: In file included from...
+./Common/Compiler.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef COMPILER_H.H
+                  ^
+./Common/Compiler.h(12): warning: whitespace recommended after macro name
+#define COMPILER_H.H
+                  ^
+App/App.c(16): warning: In file included from...
+./App/App.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef APP.H
+           ^
+./App/App.h(12): warning: whitespace recommended after macro name
+#define APP.H
+           ^
+App/App.c(16): warning: In file included from...
+./App/App.h(18): warning: In file included from...
+./App/Led.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef LED.H
+           ^
+./App/Led.h(12): warning: whitespace recommended after macro name
+#define LED.H
+           ^
+App/App.c(16): warning: In file included from...
+./App/App.h(18): warning: In file included from...
+./App/Led.h(17): warning: In file included from...
+./Inc\Port.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef PORT.H
+            ^
+./Inc\Port.h(12): warning: whitespace recommended after macro name
+#define PORT.H
+            ^
+App/App.c(16): warning: In file included from...
+./App/App.h(18): warning: In file included from...
+./App/Led.h(17): warning: In file included from...
+./Inc\Port.h(17): warning: In file included from...
+./Common\Common_Macros.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef COMMON_MACROS.H
+                     ^
+./Common\Common_Macros.h(12): warning: whitespace recommended after macro name
+#define COMMON_MACROS.H
+                     ^
+App/App.c(16): warning: In file included from...
+./App/App.h(18): warning: In file included from...
+./App/Led.h(17): warning: In file included from...
+./Inc\Port.h(18): warning: In file included from...
+./Config\Port_Cfg.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef PORT_CFG.H
+                ^
+./Config\Port_Cfg.h(12): warning: whitespace recommended after macro name
+#define PORT_CFG.H
+                ^
+App/App.c(16): warning: In file included from...
+./App/App.h(18): warning: In file included from...
+./App/Led.h(18): warning: In file included from...
+./Inc\Dio.h(10): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef DIO.H
+           ^
+./Inc\Dio.h(11): warning: whitespace recommended after macro name
+#define DIO.H
+           ^
+App/App.c(16): warning: In file included from...
+./App/App.h(18): warning: In file included from...
+./App/Led.h(18): warning: In file included from...
+./Inc\Dio.h(18): warning: In file included from...
+./Config\Dio_Cfg.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef DIO_CFG.H
+               ^
+./Config\Dio_Cfg.h(12): warning: whitespace recommended after macro name
+#define DIO_CFG.H
+               ^
+App/App.c(16): warning: In file included from...
+./App/App.h(18): warning: In file included from...
+./App/Led.h(18): warning: In file included from...
+./Inc\Dio.h(19): warning: In file included from...
+./Inc/Port_Regs.h(53): warning: no newline at end of file [-Wnewline-eof]
+#endif /* PORT_REGS_H */
+                        ^
+App/App.c(16): warning: In file included from...
+./App/App.h(18): warning: In file included from...
+./App/Led.h(18): warning: In file included from...
+./Inc\Dio.h(95): warning: no newline at end of file [-Wnewline-eof]
+ *********************************************************************************************************************/
+                                                                                                                       ^
+App/App.c(16): warning: In file included from...
+./App/App.h(18): warning: In file included from...
+./App/Led.h(19): warning: In file included from...
+./App/Led_Cfg.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef LED_CFG.H
+               ^
+./App/Led_Cfg.h(12): warning: whitespace recommended after macro name
+#define LED_CFG.H
+               ^
+App/App.c(18): warning: In file included from...
+./Inc\Gptm.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef GPTM.H
+            ^
+./Inc\Gptm.h(12): warning: whitespace recommended after macro name
+#define GPTM.H
+            ^
+App/App.c(18): warning: In file included from...
+./Inc\Gptm.h(18): warning: In file included from...
+./Config\Gptm_Cfg.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef GPTM_CFG.H
+                ^
+./Config\Gptm_Cfg.h(12): warning: whitespace recommended after macro name
+#define GPTM_CFG.H
+                ^
+App/App.c(18): warning: In file included from...
+./Inc\Gptm.h(63): warning: padding struct 'Gpt_ConfigChannel' with 1 byte to align 'GptChannelTickFrequency' [-Wpadded]
+  Gpt_ValueType        GptChannelTickFrequency;
+                       ^
+./Inc\Gptm.h(67): warning: padding struct 'Gpt_ConfigChannel' with 2 bytes to align 'GptNotifcation' [-Wpadded]
+  void                 (*GptNotifcation)(void);
+                         ^
+App/App.c(19): warning: In file included from...
+./Inc\IntCtrl.h(12): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef INTCTRL.H
+               ^
+./Inc\IntCtrl.h(13): warning: whitespace recommended after macro name
+#define INTCTRL.H
+               ^
+App/App.c(19): warning: In file included from...
+./Inc\IntCtrl.h(19): warning: In file included from...
+./Config\IntCtrl_Cfg.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef INTCTRL_CFG.H
+                   ^
+./Config\IntCtrl_Cfg.h(12): warning: whitespace recommended after macro name
+#define INTCTRL_CFG.H
+                   ^
+App/App.c(19): warning: In file included from...
+./Inc\IntCtrl.h(153): warning: commas at the end of enumerator lists are a C99-specific feature [-Wc99-extensions]
+        NVIC_PWM1_Fault                                                 ,               /*138*/
+                                                                        ^
+App/App.c(36): warning: // comments are not allowed in this language [-Wcomment]
+#define TIME_OFF                              6         //in seconds
+                                                        ^
+App/App.c(79): warning: no previous prototype for function 'Timer0A_ISR' [-Wmissing-prototypes]
+void Timer0A_ISR()
+     ^
+App/App.c(79): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Timer0A_ISR()
+^
+static 
+37 warnings generated.
+compiling App.c...
+MCAL/Port.c(15): warning: In file included from...
+./Inc\Port.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef PORT.H
+            ^
+./Inc\Port.h(12): warning: whitespace recommended after macro name
+#define PORT.H
+            ^
+MCAL/Port.c(15): warning: In file included from...
+./Inc\Port.h(17): warning: In file included from...
+./Common\Common_Macros.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef COMMON_MACROS.H
+                     ^
+./Common\Common_Macros.h(12): warning: whitespace recommended after macro name
+#define COMMON_MACROS.H
+                     ^
+MCAL/Port.c(15): warning: In file included from...
+./Inc\Port.h(18): warning: In file included from...
+./Config\Port_Cfg.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef PORT_CFG.H
+                ^
+./Config\Port_Cfg.h(12): warning: whitespace recommended after macro name
+#define PORT_CFG.H
+                ^
+MCAL/Port.c(15): warning: In file included from...
+./Inc\Port.h(19): warning: In file included from...
+./Common\Std_Types.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef STD_TYPES_H.H
+                   ^
+./Common\Std_Types.h(12): warning: whitespace recommended after macro name
+#define STD_TYPES_H.H
+                   ^
+MCAL/Port.c(15): warning: In file included from...
+./Inc\Port.h(19): warning: In file included from...
+./Common\Std_Types.h(17): warning: In file included from...
+./Common/Platform_Types.h(49): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef unsigned long long    uint64;         /*                     0..1844674407370955161  */
+                 ^
+./Common/Platform_Types.h(50): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef signed long long      sint64;         /* -9223372036854775808 .. 9223372036854775807 */
+               ^
+MCAL/Port.c(15): warning: In file included from...
+./Inc\Port.h(19): warning: In file included from...
+./Common\Std_Types.h(18): warning: In file included from...
+./Common/Compiler.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef COMPILER_H.H
+                  ^
+./Common/Compiler.h(12): warning: whitespace recommended after macro name
+#define COMPILER_H.H
+                  ^
+MCAL/Port.c(16): warning: In file included from...
+./Inc\Port_Regs.h(53): warning: no newline at end of file [-Wnewline-eof]
+#endif /* PORT_REGS_H */
+                        ^
+MCAL/Port.c(64): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+    for(uint8 i = 0; i < PORT_CONFIGURED_CHANNLES; i++)
+        ^
+MCAL/Port.c(64): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+MCAL/Port.c(93): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        *(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_LOCK_REG_OFFSET) = GPIO_COMMIT_UNLOCK_NUMBER;                     /* Unlock the GPIOCR register */
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Port.c(94): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        SET_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_COMMIT_REG_OFFSET) , Port_Configuration[i].pin_num);  /* Set the corresponding bit in GPIOCR register to allow changes on this pin */
+        ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(22): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT)      (REG|=(1<<BIT))
+                               ^~~
+MCAL/Port.c(108): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        SET_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_ANALOG_MODE_SEL_REG_OFFSET) , Port_Configuration[i].pin_num);      /* SET the corresponding bit in the GPIOAMSEL register to enable analog functionality on this pin */
+        ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(22): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT)      (REG|=(1<<BIT))
+                               ^~~
+MCAL/Port.c(109): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        CLEAR_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_ALT_FUNC_REG_OFFSET) , Port_Configuration[i].pin_num);             /* Disable Alternative function for this pin by clear the corresponding bit in GPIOAFSEL register */
+        ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(23): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT)    (REG&=(~(1<<BIT)))
+                               ^~~
+MCAL/Port.c(110): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        CLEAR_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_DIGITAL_ENABLE_REG_OFFSET) , Port_Configuration[i].pin_num);             /* Disable Digitale Enable for this pin by clear the corresponding bit in GPIODEN register */
+        ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(23): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT)    (REG&=(~(1<<BIT)))
+                               ^~~
+MCAL/Port.c(113): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        CLEAR_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_ANALOG_MODE_SEL_REG_OFFSET) , Port_Configuration[i].pin_num);      /* Clear the corresponding bit in the GPIOAMSEL register to disable analog functionality on this pin */
+        ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(23): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT)    (REG&=(~(1<<BIT)))
+                               ^~~
+MCAL/Port.c(114): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        CLEAR_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_ALT_FUNC_REG_OFFSET) , Port_Configuration[i].pin_num);             /* Disable Alternative function for this pin by clear the corresponding bit in GPIOAFSEL register */
+        ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(23): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT)    (REG&=(~(1<<BIT)))
+                               ^~~
+MCAL/Port.c(115): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        *(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_CTL_REG_OFFSET) &= ~(0x0000000F << (Port_Configuration[i].pin_num * 4));     /* Clear the PMCx bits for this pin */
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Port.c(115): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        *(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_CTL_REG_OFFSET) &= ~(0x0000000F << (Port_Configuration[i].pin_num * 4));     /* Clear the PMCx bits for this pin */
+                                                                                   ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Port.c(116): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        SET_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_DIGITAL_ENABLE_REG_OFFSET) , Port_Configuration[i].pin_num);         /* Set the corresponding bit in the GPIODEN register to enable digital functionality on this pin */
+        ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(22): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT)      (REG|=(1<<BIT))
+                               ^~~
+MCAL/Port.c(119): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        SET_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_ALT_FUNC_REG_OFFSET) , Port_Configuration[i].pin_num);              /* Enable Alternative function for this pin by setting the corresponding bit in GPIOAFSEL register */
+        ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(22): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT)      (REG|=(1<<BIT))
+                               ^~~
+MCAL/Port.c(120): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        *(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_CTL_REG_OFFSET) |= ((0x0000000F & Port_Configuration[i].mode) << (Port_Configuration[i].pin_num * 4));
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Port.c(120): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        *(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_CTL_REG_OFFSET) |= ((0x0000000F & Port_Configuration[i].mode) << (Port_Configuration[i].pin_num * 4));
+                                                                                   ~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Port.c(121): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        SET_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_DIGITAL_ENABLE_REG_OFFSET) , Port_Configuration[i].pin_num);        /* Set the corresponding bit in the GPIODEN register to enable digital functionality on this pin */
+        ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(22): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT)      (REG|=(1<<BIT))
+                               ^~~
+MCAL/Port.c(126): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        SET_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_DIR_REG_OFFSET) , Port_Configuration[i].pin_num);                /* Set the corresponding bit in the GPIODIR register to configure it as output pin */
+        ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(22): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT)      (REG|=(1<<BIT))
+                               ^~~
+MCAL/Port.c(130): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+          SET_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_DATA_REG_OFFSET) , Port_Configuration[i].pin_num);          /* Set the corresponding bit in the GPIODATA register to provide initial value 1 */
+          ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(22): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT)      (REG|=(1<<BIT))
+                               ^~~
+MCAL/Port.c(134): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+          CLEAR_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_DATA_REG_OFFSET) , Port_Configuration[i].pin_num);        /* Clear the corresponding bit in the GPIODATA register to provide initial value 0 */
+          ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(23): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT)    (REG&=(~(1<<BIT)))
+                               ^~~
+MCAL/Port.c(139): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        CLEAR_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_DIR_REG_OFFSET) , Port_Configuration[i].pin_num);           /* Clear the corresponding bit in the GPIODIR register to configure it as input pin */
+        ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(23): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT)    (REG&=(~(1<<BIT)))
+                               ^~~
+MCAL/Port.c(143): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+          SET_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_PULL_UP_REG_OFFSET) , Port_Configuration[i].pin_num);       /* Set the corresponding bit in the GPIOPUR register to enable the internal pull up pin */
+          ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(22): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT)      (REG|=(1<<BIT))
+                               ^~~
+MCAL/Port.c(147): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+          SET_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_PULL_DOWN_REG_OFFSET) , Port_Configuration[i].pin_num);     /* Set the corresponding bit in the GPIOPDR register to enable the internal pull down pin */
+          ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(22): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT)      (REG|=(1<<BIT))
+                               ^~~
+MCAL/Port.c(151): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+                  SET_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_ODR_REG_OFFSET) , Port_Configuration[i].pin_num);          /* Set the corresponding bit in the GPIOPDR register to disable the internal open drain pin */
+                  ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(22): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT)      (REG|=(1<<BIT))
+                               ^~~
+MCAL/Port.c(155): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+          CLEAR_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_PULL_UP_REG_OFFSET) , Port_Configuration[i].pin_num);     /* Clear the corresponding bit in the GPIOPUR register to disable the internal pull up pin */
+          ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(23): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT)    (REG&=(~(1<<BIT)))
+                               ^~~
+MCAL/Port.c(156): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+          CLEAR_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_PULL_DOWN_REG_OFFSET) , Port_Configuration[i].pin_num);   /* Clear the corresponding bit in the GPIOPDR register to disable the internal pull down pin */
+          ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(23): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT)    (REG&=(~(1<<BIT)))
+                               ^~~
+MCAL/Port.c(157): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+          CLEAR_BIT(*(volatile uint32 *)((volatile uint8 *)PortGpio_Ptr + PORT_ODR_REG_OFFSET) , Port_Configuration[i].pin_num);         /* Clear the corresponding bit in the GPIOPDR register to disable the internal open drain pin */
+          ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(23): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT)    (REG&=(~(1<<BIT)))
+                               ^~~
+MCAL/Port.c(167): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+                  CLEAR_BIT(*(volatile uint32 *) ((volatile uint8 *) PortGpio_Ptr + PORT_DR2R_REG_OFFSET ) , Port_Configuration[i].pin_num );    /* Clear the corresponding bit in the GPIODR2R register to out 2-mA drive */
+                  ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(23): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT)    (REG&=(~(1<<BIT)))
+                               ^~~
+MCAL/Port.c(168): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+                  CLEAR_BIT(*(volatile uint32 *) ((volatile uint8 *) PortGpio_Ptr + PORT_DR4R_REG_OFFSET ) , Port_Configuration[i].pin_num );    /* Clear the corresponding bit in the GPIODR4R register to out 4-mA drive */
+                  ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(23): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT)    (REG&=(~(1<<BIT)))
+                               ^~~
+MCAL/Port.c(169): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+                  CLEAR_BIT(*(volatile uint32 *) ((volatile uint8 *) PortGpio_Ptr + PORT_DR8R_REG_OFFSET ) , Port_Configuration[i].pin_num );    /* Clear the corresponding bit in the GPIODR8R register to out 8-mA drive */
+                  ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(23): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT)    (REG&=(~(1<<BIT)))
+                               ^~~
+MCAL/Port.c(173): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+                 SET_BIT  (*(volatile uint32 *) ((volatile uint8 *) PortGpio_Ptr + PORT_DR2R_REG_OFFSET ) , Port_Configuration[i].pin_num );     /* Set the corresponding bit in the GPIODR2R register to out 2-mA drive */
+                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(22): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT)      (REG|=(1<<BIT))
+                               ^~~
+MCAL/Port.c(174): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+                 CLEAR_BIT(*(volatile uint32 *) ((volatile uint8 *) PortGpio_Ptr + PORT_DR4R_REG_OFFSET ) , Port_Configuration[i].pin_num );     /* Clear the corresponding bit in the GPIODR4R register to out 4-mA drive */
+                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(23): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT)    (REG&=(~(1<<BIT)))
+                               ^~~
+MCAL/Port.c(175): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+                 CLEAR_BIT(*(volatile uint32 *) ((volatile uint8 *) PortGpio_Ptr + PORT_DR8R_REG_OFFSET ) , Port_Configuration[i].pin_num );     /* Clear the corresponding bit in the GPIODR8R register to out 8-mA drive */
+                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(23): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT)    (REG&=(~(1<<BIT)))
+                               ^~~
+MCAL/Port.c(179): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+                 CLEAR_BIT(*(volatile uint32 *) ((volatile uint8 *) PortGpio_Ptr + PORT_DR2R_REG_OFFSET ) , Port_Configuration[i].pin_num );      /* Clear the corresponding bit in the GPIODR2R register to out 2-mA drive */
+                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(23): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT)    (REG&=(~(1<<BIT)))
+                               ^~~
+MCAL/Port.c(180): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+                 SET_BIT  (*(volatile uint32 *) ((volatile uint8 *) PortGpio_Ptr + PORT_DR4R_REG_OFFSET ) , Port_Configuration[i].pin_num );      /* Set the corresponding bit in the GPIODR4R register to out 4-mA drive */
+                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(22): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT)      (REG|=(1<<BIT))
+                               ^~~
+MCAL/Port.c(181): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+                 CLEAR_BIT(*(volatile uint32 *) ((volatile uint8 *) PortGpio_Ptr + PORT_DR8R_REG_OFFSET ) , Port_Configuration[i].pin_num );      /* Clear the corresponding bit in the GPIODR8R register to out 8-mA drive */
+                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(23): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT)    (REG&=(~(1<<BIT)))
+                               ^~~
+MCAL/Port.c(185): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+                 CLEAR_BIT(*(volatile uint32 *) ((volatile uint8 *) PortGpio_Ptr + PORT_DR2R_REG_OFFSET ) , Port_Configuration[i].pin_num );     /* Clear the corresponding bit in the GPIODR2R register to out 2-mA drive */
+                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(23): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT)    (REG&=(~(1<<BIT)))
+                               ^~~
+MCAL/Port.c(186): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+                 CLEAR_BIT(*(volatile uint32 *) ((volatile uint8 *) PortGpio_Ptr + PORT_DR4R_REG_OFFSET ) , Port_Configuration[i].pin_num );     /* Clear the corresponding bit in the GPIODR4R register to out 4-mA drive */
+                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(23): note: expanded from macro 'CLEAR_BIT'
+#define CLEAR_BIT(REG,BIT)    (REG&=(~(1<<BIT)))
+                               ^~~
+MCAL/Port.c(187): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+                 SET_BIT  (*(volatile uint32 *) ((volatile uint8 *) PortGpio_Ptr + PORT_DR8R_REG_OFFSET ) , Port_Configuration[i].pin_num );     /* Set the corresponding bit in the GPIODR8R register to out 8-mA drive */
+                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Common\Common_Macros.h(22): note: expanded from macro 'SET_BIT'
+#define SET_BIT(REG,BIT)      (REG|=(1<<BIT))
+                               ^~~
+51 warnings generated.
+compiling Port.c...
+MCAL/Gptm.c(15): warning: In file included from...
+./Inc\Gptm.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef GPTM.H
+            ^
+./Inc\Gptm.h(12): warning: whitespace recommended after macro name
+#define GPTM.H
+            ^
+MCAL/Gptm.c(15): warning: In file included from...
+./Inc\Gptm.h(17): warning: In file included from...
+./Common\Common_Macros.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef COMMON_MACROS.H
+                     ^
+./Common\Common_Macros.h(12): warning: whitespace recommended after macro name
+#define COMMON_MACROS.H
+                     ^
+MCAL/Gptm.c(15): warning: In file included from...
+./Inc\Gptm.h(18): warning: In file included from...
+./Config\Gptm_Cfg.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef GPTM_CFG.H
+                ^
+./Config\Gptm_Cfg.h(12): warning: whitespace recommended after macro name
+#define GPTM_CFG.H
+                ^
+MCAL/Gptm.c(15): warning: In file included from...
+./Inc\Gptm.h(19): warning: In file included from...
+./Common\Std_Types.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef STD_TYPES_H.H
+                   ^
+./Common\Std_Types.h(12): warning: whitespace recommended after macro name
+#define STD_TYPES_H.H
+                   ^
+MCAL/Gptm.c(15): warning: In file included from...
+./Inc\Gptm.h(19): warning: In file included from...
+./Common\Std_Types.h(17): warning: In file included from...
+./Common/Platform_Types.h(49): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef unsigned long long    uint64;         /*                     0..1844674407370955161  */
+                 ^
+./Common/Platform_Types.h(50): warning: 'long long' is an extension when C99 mode is not enabled [-Wlong-long]
+typedef signed long long      sint64;         /* -9223372036854775808 .. 9223372036854775807 */
+               ^
+MCAL/Gptm.c(15): warning: In file included from...
+./Inc\Gptm.h(19): warning: In file included from...
+./Common\Std_Types.h(18): warning: In file included from...
+./Common/Compiler.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef COMPILER_H.H
+                  ^
+./Common/Compiler.h(12): warning: whitespace recommended after macro name
+#define COMPILER_H.H
+                  ^
+MCAL/Gptm.c(15): warning: In file included from...
+./Inc\Gptm.h(63): warning: padding struct 'Gpt_ConfigChannel' with 1 byte to align 'GptChannelTickFrequency' [-Wpadded]
+  Gpt_ValueType        GptChannelTickFrequency;
+                       ^
+./Inc\Gptm.h(67): warning: padding struct 'Gpt_ConfigChannel' with 2 bytes to align 'GptNotifcation' [-Wpadded]
+  void                 (*GptNotifcation)(void);
+                         ^
+MCAL/Gptm.c(16): warning: In file included from...
+./Inc\Gpt_Regs.h(11): warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+#ifndef GPT_REG.H
+               ^
+./Inc\Gpt_Regs.h(12): warning: whitespace recommended after macro name
+#define GPT_REG.H
+               ^
+MCAL/Gptm.c(62): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+  for (uint8 i = 0; i < GPT_CONFIGURED_CHANNLES; i++)
+       ^
+MCAL/Gptm.c(62): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+MCAL/Gptm.c(121): warning: // comments are not allowed in this language [-Wcomment]
+//#if ((GPT_PREDEF_TIMER_1US_16BIT == GPT_DISABLE ) && (GPT_PREDEF_TIMER_1US_24BIT == GPT_DISABLE ) && (GPT_PREDEF_TIMER_1US_32BIT == GPT_DISABLE ) && (GPT_PREDEF_TIMER_100US_32BIT == GPT_DISABLE ))
+^
+MCAL/Gptm.c(185): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMCFG_BASE_OFFSET) = TIMER_16_BIT_MODE;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(194): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMCTL_BASE_OFFSET) &=  GPT_GPTMCTL_TAEN_MASK;
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(195): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMCTL_BASE_OFFSET)  |= TIMER_A;
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(199): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAMR_BASE_OFFSET) &= GPT_GPTMTAMR_TAMR_MASK;
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(200): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAMR_BASE_OFFSET)  |= ONE_SHOT_TIMER_MODE;
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(204): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAMR_BASE_OFFSET) &= GPT_GPTMTAMR_TAMR_MASK;
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(205): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAMR_BASE_OFFSET) |= PERIODIC_TIMER_MODE;
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(222): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAMR_BASE_OFFSET) |= TIMER_COUNT_DOWN;
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(231): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAILR_BASE_OFFSET) = ((Gpt_Configuration[i].GptChannelTickValueMax)*(0xFFFF));
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(232): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAPR_BASE_OFFSET)=TIMER_PRESCALER;
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(238): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMCTL_BASE_OFFSET) &=  GPT_GPTMCTL_TBEN_MASK;
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(239): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMCTL_BASE_OFFSET)  |= TIMER_B;
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(243): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTBMR_BASE_OFFSET) &= GPT_GPTMTAMR_TAMR_MASK;
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(244): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTBMR_BASE_OFFSET)  |= ONE_SHOT_TIMER_MODE;
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(248): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTBMR_BASE_OFFSET) &= GPT_GPTMTAMR_TAMR_MASK;
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(249): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+        *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTBMR_BASE_OFFSET) |= PERIODIC_TIMER_MODE;
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(266): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTBMR_BASE_OFFSET) |= TIMER_COUNT_DOWN;
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(275): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTBILR_BASE_OFFSET) = ((Gpt_Configuration[i].GptChannelTickValueMax)*(0xFFFF)) ;
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(276): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTBPR_BASE_OFFSET)=TIMER_PRESCALER;
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(962): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMIMR_BASE_OFFSET) &= GPT_GPTMIMR_MUSK;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(963): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMIMR_BASE_OFFSET) |= GPT_INTERRUPT_DISABLE;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1035): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMIMR_BASE_OFFSET) &= GPT_GPTMIMR_MUSK;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1036): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMIMR_BASE_OFFSET) |= GPT_INTERRUPT_ENABLE;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1109): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAILR_BASE_OFFSET) = (uint16)Value; // put the value
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1111): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMCTL_BASE_OFFSET) &=  GPT_GPTMCTL_TAEN_MASK;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1112): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMCTL_BASE_OFFSET) |= TIMER_A_ENABLE;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1114): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAMR_BASE_OFFSET) &=  GPT_GPTMTAMR_TAMIE_MASK;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1115): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAMR_BASE_OFFSET) |= TIMER_A_INTERRUPT;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1117): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMIMR_BASE_OFFSET) &=  GPT_GPTMIMR_TATOIM_MASK;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1118): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMIMR_BASE_OFFSET) |= TIMER_A_ENABLE;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1123): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTBILR_BASE_OFFSET) = (uint16)Value; // put the value
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1125): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMCTL_BASE_OFFSET) &=  GPT_GPTMCTL_TBEN_MASK;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1126): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMCTL_BASE_OFFSET) |= TIMER_B_ENABLE;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1128): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAMR_BASE_OFFSET) &=  GPT_GPTMTAMR_TAMIE_MASK;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1129): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAMR_BASE_OFFSET) |= TIMER_B_INTERRUPT;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1131): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMIMR_BASE_OFFSET) &=  GPT_GPTMIMR_TBTOIM_MASK;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1132): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMIMR_BASE_OFFSET) |= TIMER_B_ENABLE;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1206): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMCTL_BASE_OFFSET) &=  GPT_GPTMCTL_TAEN_MASK;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1207): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMCTL_BASE_OFFSET) |= TIMER_A;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1212): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMCTL_BASE_OFFSET) &=  GPT_GPTMCTL_TBEN_MASK;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1213): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMCTL_BASE_OFFSET) |= TIMER_B;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1290): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    case RUNNING : Timer_Value_Elapsed = *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAR_BASE_OFFSET);
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1293): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    case STOPPED : Timer_Value_Elapsed = *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAILR_BASE_OFFSET);
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1297): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      Timer_Value_Elapsed = *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAILR_BASE_OFFSET);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1308): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    case RUNNING : Timer_Value_Elapsed = *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTBR_BASE_OFFSET);
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1311): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    case STOPPED : Timer_Value_Elapsed = *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTBILR_BASE_OFFSET);
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1315): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+      Timer_Value_Elapsed = *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTBILR_BASE_OFFSET);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1320): warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+MCAL/Gptm.c(1317): warning: 'break' will never be executed [-Wunreachable-code-break]
+      break;
+      ^~~~~
+MCAL/Gptm.c(1313): warning: 'break' will never be executed [-Wunreachable-code-break]
+    break;
+    ^~~~~
+MCAL/Gptm.c(1310): warning: 'break' will never be executed [-Wunreachable-code-break]
+    break;
+    ^~~~~
+MCAL/Gptm.c(1307): warning: 'break' will never be executed [-Wunreachable-code-break]
+    break;
+    ^~~~~
+MCAL/Gptm.c(1299): warning: 'break' will never be executed [-Wunreachable-code-break]
+      break;
+      ^~~~~
+MCAL/Gptm.c(1295): warning: 'break' will never be executed [-Wunreachable-code-break]
+    break;
+    ^~~~~
+MCAL/Gptm.c(1292): warning: 'break' will never be executed [-Wunreachable-code-break]
+    break;
+    ^~~~~
+MCAL/Gptm.c(1289): warning: 'break' will never be executed [-Wunreachable-code-break]
+    break;
+    ^~~~~
+MCAL/Gptm.c(1392): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    case INITIALIZED : Timer_Value_Remaining = *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAILR_BASE_OFFSET);
+                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1395): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    case RUNNING : Timer_Value_Remaining = ((*(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAILR_BASE_OFFSET))-(*(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAR_BASE_OFFSET)));
+                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1395): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    case RUNNING : Timer_Value_Remaining = ((*(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAILR_BASE_OFFSET))-(*(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTAR_BASE_OFFSET)));
+                                                                                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1408): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    case INITIALIZED : Timer_Value_Remaining = *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTBILR_BASE_OFFSET);
+                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1411): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    case RUNNING : Timer_Value_Remaining = ((*(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTBILR_BASE_OFFSET))-(*(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTBR_BASE_OFFSET)));
+                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1411): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    case RUNNING : Timer_Value_Remaining = ((*(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTBILR_BASE_OFFSET))-(*(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMTBR_BASE_OFFSET)));
+                                                                                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1420): warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+MCAL/Gptm.c(1417): warning: 'break' will never be executed [-Wunreachable-code-break]
+    break;
+    ^~~~~
+MCAL/Gptm.c(1415): warning: 'break' will never be executed [-Wunreachable-code-break]
+    break;
+    ^~~~~
+MCAL/Gptm.c(1413): warning: 'break' will never be executed [-Wunreachable-code-break]
+    break;
+    ^~~~~
+MCAL/Gptm.c(1410): warning: 'break' will never be executed [-Wunreachable-code-break]
+    break;
+    ^~~~~
+MCAL/Gptm.c(1401): warning: 'break' will never be executed [-Wunreachable-code-break]
+    break;
+    ^~~~~
+MCAL/Gptm.c(1399): warning: 'break' will never be executed [-Wunreachable-code-break]
+    break;
+    ^~~~~
+MCAL/Gptm.c(1397): warning: 'break' will never be executed [-Wunreachable-code-break]
+    break;
+    ^~~~~
+MCAL/Gptm.c(1394): warning: 'break' will never be executed [-Wunreachable-code-break]
+    break;
+    ^~~~~
+MCAL/Gptm.c(1444): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMICR_BASE_OFFSET) = Set_BIT;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1476): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMICR_BASE_OFFSET) = Set_BIT;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1470): warning: array index 2 is past the end of the array (which contains 1 element) [-Warray-bounds]
+  if(GptNotification[2] != NULL_PTR)
+     ^               ~
+MCAL/Gptm.c(33): note: array 'GptNotification' declared here
+static void (*GptNotification[GPT_CONFIGURED_CHANNLES]) (void);
+^
+MCAL/Gptm.c(1507): warning: cast from 'volatile uint8 *' (aka 'volatile unsigned char *') to 'volatile uint32 *' (aka 'volatile unsigned long *') increases required alignment from 1 to 4 [-Wcast-align]
+    *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMICR_BASE_OFFSET) = Set_BIT;
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MCAL/Gptm.c(1501): warning: array index 4 is past the end of the array (which contains 1 element) [-Warray-bounds]
+  if(GptNotification[4] != NULL_PTR)
+     ^               ~
+MCAL/Gptm.c(33): note: array 'GptNotification' declared here
+static void (*GptNotification[GPT_CONFIGURED_CHANNLES]) (void);
+^
+95 warnings generated.
+compiling Gptm.c...
+assembling startup_TM4C123.s...
+RTE/Device/TM4C123GH6PM/system_TM4C123.c(13): warning: In file included from...
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123.h(98): warning: In file included from...
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(298): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(357): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(713): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(729): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(774): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(779): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(872): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(885): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(892): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(897): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(904): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(910): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(917): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(924): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(929): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(936): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(942): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(949): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(956): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(961): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(968): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(974): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(981): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(988): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(993): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1000): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1006): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1013): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1020): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1025): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1032): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1038): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1045): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1052): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1057): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1064): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1070): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1077): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1084): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1089): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1096): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1102): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Keil/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1251): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+RTE/Device/TM4C123GH6PM/system_TM4C123.c(19): warning: // comments are not allowed in this language [-Wcomment]
+//-------- <<< Use Configuration Wizard in Context Menu >>> ------------------
+^
+45 warnings generated.
+compiling system_TM4C123.c...
+linking...
+Program Size: Code=7918 RO-data=966 RW-data=0 ZI-data=648  
+".\Objects\LED_BLINKING.axf" - 0 Error(s), 446 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  D:\Keil\ARM\CMSIS\5.9.0\CMSIS\Core\Include
+  D:\Keil\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.0.1
+      Include file:  Device\Include\TM4C123\TM4C123.h
+      Source file:   Device\Source\ARM\startup_TM4C123.s
+      Source file:   Device\Source\system_TM4C123.c
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>
