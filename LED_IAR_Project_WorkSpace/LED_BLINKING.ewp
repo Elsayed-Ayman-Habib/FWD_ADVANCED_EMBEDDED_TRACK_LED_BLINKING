@@ -707,7 +707,7 @@
         </option>
         <option>
           <name>IlinkIcfFile</name>
-          <state>$TOOLKIT_DIR$\config\linker\TexasInstruments\TM4C123GH6.icf</state>
+          <state>$TOOLKIT_DIR$\CONFIG\generic.icf</state>
         </option>
         <option>
           <name>IlinkIcfFileSlave</name>
@@ -767,7 +767,7 @@
         </option>
         <option>
           <name>IlinkProgramEntryLabel</name>
-          <state>__iar_program_start</state>
+          <state></state>
         </option>
         <option>
           <name>DoFill</name>

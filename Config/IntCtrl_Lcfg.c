@@ -26,7 +26,8 @@
  *  GLOBAL DATA
  *********************************************************************************************************************/
 const IntCtrl_ConfigType IntCtrl_ConfigPtr = {                                      
-  NVIC_16_32_Bit_Timer_0_A  			      ,INTCTRL_GROUP0				        ,INTCTRL_SUBGROUP0     
+  NVIC_16_32_Bit_Timer_0_A  			      ,INTCTRL_GROUP7				        ,INTCTRL_SUBGROUP0,  
+  NVIC_16_32_Bit_Timer_1_A  			      ,INTCTRL_GROUP0				        ,INTCTRL_SUBGROUP0 
 };
 /**********************************************************************************************************************
  *  LOCAL FUNCTION PROTOTYPES

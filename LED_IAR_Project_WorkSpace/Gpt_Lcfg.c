@@ -28,9 +28,12 @@
  *  GLOBAL DATA
  *********************************************************************************************************************/
 extern void Timer0A_ISR(void);
+extern void Timer1A_ISR(void);
 
 const Gpt_ConfigType Gpt_ConfigPtr = {
-			 TIMER0_A       ,GPT_MODE_NORMAL,INITIALIZED,TickFrequency,TickValueMax,INTERRUPT_ON ,GPT_CONTINUOUS,Timer0A_ISR
+			 TIMER0_A       ,GPT_MODE_NORMAL,INITIALIZED,TickFrequency,TickValueMax,INTERRUPT_ON ,GPT_CONTINUOUS,Timer0A_ISR,
+                         TIMER0_B       ,GPT_MODE_NORMAL,INITIALIZED,TickFrequency,TickValueMax,INTERRUPT_ON ,GPT_CONTINUOUS,NULL_PTR,
+			 TIMER1_A       ,GPT_MODE_NORMAL,INITIALIZED,TickFrequency,TickValueMax,INTERRUPT_ON ,GPT_CONTINUOUS,Timer1A_ISR,
 };
 	
 /**********************************************************************************************************************

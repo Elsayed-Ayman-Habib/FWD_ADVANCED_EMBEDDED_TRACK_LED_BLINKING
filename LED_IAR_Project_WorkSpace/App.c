@@ -58,8 +58,9 @@ void Init_Drivers (void)
     Dio_Init(&Dio_Configuration);
     Port_Init(&Port_ConfigPtr);
     Gpt_init(&Gpt_ConfigPtr); 
-    Gpt_EnableNotification(TIMER0_A);
-    Gpt_StartTimer (TIMER0_A,62500); 
+   //Gpt_StartTimer (TIMER0_A,62500);
+    Gpt_StartTimer (TIMER1_A,62500); 
+   // Gpt_EnableNotification(TIMER1_A);
     IntCtrl_init(&IntCtrl_ConfigPtr);
    
 }
@@ -78,6 +79,22 @@ void Init_Drivers (void)
 void Timer0A_ISR()
  {
      TICKS++;
+ }
+
+/******************************************************************************
+* \Syntax          : Std_ReturnType FunctionName(AnyType parameterName)        
+* \Description     : Describe this service                                    
+*                                                                             
+* \Sync\Async      : Synchronous                                               
+* \Reentrancy      : Non Reentrant                                             
+* \Parameters (in) : parameterName   Parameter Describtion                     
+* \Parameters (out): None                                                      
+* \Return value:   : Std_ReturnType  E_OK
+*                                    E_NOT_OK                                  
+*******************************************************************************/
+void Timer1A_ISR()
+ {
+     TICKS1++;
  }
 
 /******************************************************************************
@@ -113,16 +130,16 @@ void App_Start (void)
 {  
   if(LedState)
   {
-    if(TICKS>= Time_Sec (6))
+    if(TICKS1>= Time_Sec (6))
     {
       LED_OFF(RED_LED);
-      TICKS=0;
+      TICKS1=0;
       LedState=FALSE;
     }
   }
   else
   {
-    if(TICKS>=Time_Sec (2))
+    if(TICKS1>=Time_Sec (2))
     {
       LED_ON(RED_LED);
       LedState=TRUE;

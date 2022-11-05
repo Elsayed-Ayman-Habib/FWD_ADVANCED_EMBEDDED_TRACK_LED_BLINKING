@@ -957,7 +957,7 @@ void Gpt_DisableNotification (Gpt_ChannelType Channel)
   break ; 
   }
   
-  if (Gpt_Configuration[Channel].Gpt_EnableChannelNotification == INTERRUPT_OFF )
+  if (Gpt_Configuration[Channel].Gpt_EnableChannelNotification == INTERRUPT_ON )
   {
     *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMIMR_BASE_OFFSET) &= GPT_GPTMIMR_MUSK;
     *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMIMR_BASE_OFFSET) |= GPT_INTERRUPT_DISABLE;
@@ -1438,8 +1438,8 @@ void TIMER0A_Handler(void)
   if(GptNotification[0] != NULL_PTR)
   {
     /*Call the funciton*/
-    GptNotification[0]();
-    
+    //GptNotification[1]();
+    (Gpt_Configuration[0].GptNotifcation)();
     /*Clear the flag*/
     *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMICR_BASE_OFFSET) = Set_BIT;
   }
@@ -1470,7 +1470,8 @@ void TIMER1A_Handler(void)
   if(GptNotification[2] != NULL_PTR)
   {
     /*Call the funciton*/
-    GptNotification[2]();
+    //GptNotification[2]();
+    (Gpt_Configuration[2].GptNotifcation)();
     
     /*Clear the flag*/
     *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMICR_BASE_OFFSET) = Set_BIT;
@@ -1501,8 +1502,8 @@ void TIMER2A_Handler(void)
   if(GptNotification[4] != NULL_PTR)
   {
     /*Call the funciton*/
-    GptNotification[4]();
-    
+    //GptNotification[4]();
+    (Gpt_Configuration[4].GptNotifcation)();
     /*Clear the flag*/
     *(volatile uint32 *)((volatile uint8 *)GPTM_Ptr + GPT_GPTMICR_BASE_OFFSET) = Set_BIT;
   }

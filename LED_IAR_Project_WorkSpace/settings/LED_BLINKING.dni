@@ -1,3 +1,26 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[DebugChecksum]
+Checksum=-1252605659
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[LMIFTDIDriver]
+LMI_ResetMode=0x00000000
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[CallStackLog]
+Enabled=0
 [InterruptLog]
 LogEnabled=0
 SumEnabled=0
@@ -11,18 +34,9 @@ SumEnabled=0
 GraphEnabled=0
 ShowTimeLog=1
 ShowTimeSum=1
-[Stack]
-FillEnabled=0
-OverflowWarningsEnabled=1
-WarningThreshold=90
-SpWarningsEnabled=1
-WarnLogOnly=1
-UseTrigger=1
-TriggerName=main
-LimitSize=0
-ByteLimit=50
 [Breakpoints2]
-Count=0
+Bp0=_ 1 "STD_CODE2" "{$PROJ_DIR$\App.c}.127.7" 0 0 1 "" 0 ""
+Count=1
 [Interrupts]
 Enabled=1
 [MemConfig]
@@ -37,17 +51,13 @@ ShowSource=1
 [Simulator]
 Freq=10000000
 MultiCoreRunAll=1
-[LMIFTDIDriver]
-LMI_ResetMode=0x00000000
-[DebugChecksum]
-Checksum=984751957
-[Exceptions]
-StopOnUncaught=_ 0
-StopOnThrow=_ 0
-[CallStack]
-ShowArgs=0
-[Disassembly]
-MixedMode=1
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
 [DriverProfiling]
 Enabled=0
 Mode=0
@@ -58,16 +68,6 @@ Exclusions=
 mode=0
 [Breakpoints]
 Count=0
-[Log file]
-LoggingEnabled=_ 0
-LogFile=_ ""
-Category=_ 0
-[TermIOLog]
-LoggingEnabled=_ 0
-LogFile=_ ""
 [Aliases]
-A0=_ "D:\Courses\Embedded\course FWD\LED_IAR_Project\main.c" ""
-A1=_ "D:\course FWD\project\LED\Led.c" ""
-A2=_ "D:\course FWD\project\LED\cstartup_code.c" ""
-Count=3
-SuppressDialog=1
+Count=0
+SuppressDialog=0

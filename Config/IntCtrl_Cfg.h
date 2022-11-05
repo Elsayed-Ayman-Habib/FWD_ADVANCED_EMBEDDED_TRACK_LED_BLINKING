@@ -19,7 +19,7 @@
 /**********************************************************************************************************************
  *  GLOBAL CONSTANT MACROS
  *********************************************************************************************************************/
-#define INTCTRL_CONFIGURED_INTERRUPT  (1U)
+#define INTCTRL_CONFIGURED_INTERRUPT  (2U)
 						
 /* Interrupt Group Priority Number */
 #define INTCTRL_GROUP0	(0U)
